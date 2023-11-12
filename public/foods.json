@@ -1,0 +1,857 @@
+[
+  {
+    "category": "burger",
+    "food_id": 1,
+    "image": "https://i.ibb.co/980kpzZ/berger1.jpg",
+    "food_name": "Classic Beef Burger",
+    "price": 8.99,
+    "made_by": "Chef John Doe",
+    "food_origin": "United States",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the symphony of flavors that our Classic Beef Burger brings to your palate. Crafted with precision and passion, each ingredient plays a crucial role in creating a gastronomic delight. Our burger features a premium beef patty, sourced from the finest cuts of beef. This juicy and succulent patty is complemented by the crisp freshness of lettuce, the juicy burst of ripe tomatoes, and the sharpness of finely sliced onions. To add an extra layer of zest, we include the tangy crunch of pickles and the creamy richness of cheese, harmonizing the taste to perfection. The ensemble is delicately placed within a soft sesame seed bun, adding a nutty aroma to every bite.",
+      "making_procedures": "The artistry of our Classic Beef Burger is not just in the selection of top-notch ingredients but also in the meticulous preparation by our skilled chefs. The journey begins with grilling the premium beef patty to achieve the ideal balance of char and tenderness. As the patty sizzles on the grill, our chefs attentively layer on the freshness — crisp lettuce, plump tomatoes, and the distinct bite of onions. The pickles, both sweet and sour, provide a delightful contrast, while the cheese, melted to perfection, adds a creamy richness. The culmination of flavors is sealed within the embrace of a sesame seed bun, toasted to golden perfection. Each burger is a work of culinary art, crafted with passion and precision. Served with a side of joy, our Classic Beef Burger is not just a meal; it's an experience."
+    }
+  },
+  {
+    "category": "burger",
+    "food_id": 2,
+    "image": "https://i.ibb.co/Y2QHZ2N/berger2.jpg",
+    "food_name": "Spicy Chicken Burger",
+    "price": 7.99,
+    "made_by": "Chef Maria Rodriguez",
+    "food_origin": "Mexico",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Experience a fiery twist with our Spicy Chicken Burger, where bold flavors meet succulent chicken. This burger features a perfectly seasoned chicken patty with a kick, balanced by the cool crunch of lettuce, the sweetness of tomatoes, and the zing of red onions. Topped with jalapeños and pepper jack cheese, this burger is not for the faint of heart. All nestled within a warm, soft bun, this creation promises an exhilarating flavor journey.",
+      "making_procedures": "Our Spicy Chicken Burger is a testament to the culinary prowess of our chefs. The journey begins with marinating the chicken in a blend of spices that awaken the taste buds. The seasoned chicken is then grilled to perfection, creating a juicy and flavorful patty. Assembling the burger is an art form — layering crisp lettuce, ripe tomatoes, and red onions to create a refreshing base. The jalapeños add a fiery punch, and the pepper jack cheese brings a melty, savory richness. Encased in a soft bun, this burger is a celebration of bold and spicy flavors, delivering an unforgettable dining experience."
+    }
+  },
+  {
+    "category": "burger",
+    "food_id": 3,
+    "image": "https://i.ibb.co/XJ3MMRC/berger3.jpg",
+    "food_name": "Mushroom Swiss Burger",
+    "price": 9.99,
+    "made_by": "Chef Emily Turner",
+    "food_origin": "Switzerland",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Elevate your burger experience with our Mushroom Swiss Burger, a sophisticated blend of earthy mushrooms and rich Swiss cheese. The star of this burger is a succulent beef patty, perfectly grilled and topped with a generous portion of sautéed mushrooms and melted Swiss cheese. Balanced with fresh lettuce, juicy tomatoes, and a touch of mayo, this burger is a gourmet delight.",
+      "making_procedures": "Creating the Mushroom Swiss Burger is a culinary journey that starts with selecting the finest beef cuts. Our chefs expertly grill the beef patty, ensuring it retains its juiciness. Meanwhile, a medley of mushrooms is sautéed to perfection, creating a flavorful topping. The patty is then adorned with the sautéed mushrooms and a generous layer of Swiss cheese, creating a melty, umami-rich experience. The finishing touches include crisp lettuce, juicy tomatoes, and a dollop of creamy mayo, all encased in a soft bun. This burger is a testament to the fusion of gourmet flavors and classic comfort."
+    }
+  },
+  {
+    "category": "burger",
+    "food_id": 4,
+    "image": "https://i.ibb.co/xMPfHhC/berger4.jpg",
+    "food_name": "Veggie Delight Burger",
+    "price": 6.99,
+    "made_by": "Chef Aisha Patel",
+    "food_origin": "India",
+    "quantity": 8,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Savor the freshness of nature with our Veggie Delight Burger, a vibrant medley of vegetables that will tantalize your taste buds. The star of this burger is a hearty veggie patty made from a blend of colorful vegetables, legumes, and aromatic spices. Topped with crisp lettuce, juicy tomatoes, and a zesty cilantro mayo, this burger is a celebration of vegetarian flavors.",
+      "making_procedures": "Crafting the Veggie Delight Burger is a culinary art that begins with selecting the freshest vegetables. Our chefs skillfully combine these vegetables with legumes and a secret blend of aromatic spices to create a wholesome veggie patty. The patty is then grilled to perfection, ensuring a satisfying texture and flavor. Assembling the burger involves layering crisp lettuce, ripe tomatoes, and a zesty cilantro mayo, all within a soft bun. This burger is a testament to the diversity and richness of vegetarian cuisine, offering a burst of flavors in every bite."
+    }
+  },
+  {
+    "category": "burger",
+    "food_id": 5,
+    "image": "https://i.ibb.co/ccCRDnD/berger5.jpg",
+    "food_name": "BBQ Bacon Burger",
+    "price": 10.99,
+    "made_by": "Chef Michael Thompson",
+    "food_origin": "United States",
+    "quantity": 9,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the bold and smoky flavors of our BBQ Bacon Burger, a carnivore's dream come true. This burger boasts a succulent beef patty, expertly grilled and topped with crispy bacon strips. The real star, however, is the smoky barbecue sauce that adds a sweet and tangy kick. Complemented by cheddar cheese, lettuce, and tomatoes, this burger is a celebration of hearty and savory indulgence.",
+      "making_procedures": "Creating the BBQ Bacon Burger is a labor of love that starts with grilling a premium beef patty to perfection. Meanwhile, crispy bacon strips are prepared to add a crunchy and savory element. The grilled patty is then generously slathered with our signature smoky barbecue sauce, infusing every bite with a perfect blend of sweetness and tanginess. To enhance the richness, a layer of melted cheddar cheese is added, and the burger is assembled with crisp lettuce and juicy tomatoes. Encased in a soft bun, this burger is a symphony of flavors that will satisfy even the most discerning carnivores."
+    }
+  },
+  {
+    "category": "burger",
+    "food_id": 6,
+    "image": "https://i.ibb.co/WvMkw3Q/berger6.jpg",
+    "food_name": "Avocado Turkey Burger",
+    "price": 9.49,
+    "made_by": "Chef Sophia Ramirez",
+    "food_origin": "Mexico",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Embark on a journey of freshness with our Avocado Turkey Burger, a light and wholesome option for the health-conscious. This burger features a lean and flavorful turkey patty, grilled to perfection. Topped with creamy avocado slices, crisp lettuce, and juicy tomatoes, it's a guilt-free indulgence that doesn't compromise on taste.",
+      "making_procedures": "Crafting the Avocado Turkey Burger involves the art of blending lean turkey with a selection of spices to create a patty that's both flavorful and health-conscious. The turkey patty is grilled to perfection, ensuring a juicy and tender bite. The star of this burger, creamy avocado slices, are carefully layered on top, providing a rich and satisfying texture. Crisp lettuce and juicy tomatoes complete the ensemble, all encased in a soft bun. This burger is a celebration of lightness and freshness, perfect for those seeking a delightful and guilt-free dining experience."
+    }
+  },
+  {
+    "category": "burger",
+    "food_id": 7,
+    "image": "https://i.ibb.co/ZGhyW1V/berger7.jpg",
+    "food_name": "Double Cheeseburger",
+    "price": 12.99,
+    "made_by": "Chef Robert Johnson",
+    "food_origin": "United States",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the ultimate cheese lover's delight with our Double Cheeseburger. This burger features not one, but two succulent beef patties, each layered with a generous serving of melted cheese. Complemented by fresh lettuce, juicy tomatoes, and our signature burger sauce, this creation is a decadent feast for your taste buds.",
+      "making_procedures": "Crafting the Double Cheeseburger is a celebration of decadence and indulgence. It begins with grilling two premium beef patties to perfection, ensuring they retain their juiciness. The patties are then generously layered with your choice of cheese, creating a melty and savory experience. Fresh lettuce and juicy tomatoes add a refreshing element, while our signature burger sauce ties all the flavors together. The final touch is encasing this masterpiece in a soft bun, creating a burger that's truly a feast for cheese lovers."
+    }
+  },
+  {
+    "category": "burger",
+    "food_id": 8,
+    "image": "https://i.ibb.co/WvMkw3Q/berger6.jpg",
+    "food_name": "Teriyaki Pineapple Burger",
+    "price": 11.49,
+    "made_by": "Chef Hiroshi Tanaka",
+    "food_origin": "Japan",
+    "quantity": 8,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Embark on a journey of bold flavors with our Teriyaki Pineapple Burger, a fusion of Japanese and tropical influences. This burger features a succulent beef patty glazed with sweet and savory teriyaki sauce, topped with grilled pineapple slices for a burst of tropical sweetness. Complemented by fresh lettuce, tomatoes, and a touch of wasabi mayo, this burger is a unique culinary adventure.",
+      "making_procedures": "Crafting the Teriyaki Pineapple Burger involves infusing Japanese flavors into a classic American favorite. The journey begins with grilling a premium beef patty to perfection, then glazing it with a sweet and savory teriyaki sauce for a burst of umami. Grilled pineapple slices are added to enhance the tropical experience. The burger is assembled with crisp lettuce, juicy tomatoes, and a touch of wasabi mayo, creating a harmonious fusion of flavors. Encased in a soft bun, this burger is a celebration of culinary creativity and international influences."
+    }
+  },
+  {
+    "category": "burger",
+    "food_id": 9,
+    "image": "https://i.ibb.co/ygnpRm0/berger9.jpg",
+    "food_name": "Black Bean Burger",
+    "price": 8.49,
+    "made_by": "Chef Isabella Morales",
+    "food_origin": "Mexico",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Experience the rich and satisfying flavors of our Black Bean Burger, a vegetarian delight that doesn't compromise on taste. This burger features a hearty black bean patty, seasoned to perfection and grilled for a satisfying texture. Topped with fresh lettuce, juicy tomatoes, and a zesty chipotle mayo, it's a flavorful and wholesome choice.",
+      "making_procedures": "Crafting the Black Bean Burger involves the art of combining black beans with a blend of spices to create a hearty and flavorful patty. The black bean patty is grilled to perfection, ensuring a satisfying texture. Fresh lettuce and juicy tomatoes add a refreshing element, while a zesty chipotle mayo provides a bold and spicy kick. All of this goodness is encased in a soft bun, creating a burger that's not just a vegetarian option but a celebration of rich and satisfying flavors."
+    }
+  },
+  {
+    "category": "burger",
+    "food_id": 10,
+    "image": "https://i.ibb.co/TWVwGPj/berger10.jpg",
+    "food_name": "Caprese Burger",
+    "price": 9.99,
+    "made_by": "Chef Giuseppe Rossi",
+    "food_origin": "Italy",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the bold and smoky flavors of our BBQ Bacon Burger, a carnivore's dream come true. This burger boasts a succulent beef patty, expertly grilled and topped with crispy bacon strips. The real star, however, is the smoky barbecue sauce that adds a sweet and tangy kick. Complemented by cheddar cheese, lettuce, and tomatoes, this burger is a celebration of hearty and savory indulgence.",
+      "making_procedures": "Creating the BBQ Bacon Burger is a labor of love that starts with grilling a premium beef patty to perfection. Meanwhile, crispy bacon strips are prepared to add a crunchy and savory element. The grilled patty is then generously slathered with our signature smoky barbecue sauce, infusing every bite with a perfect blend of sweetness and tanginess. To enhance the richness, a layer of melted cheddar cheese is added, and the burger is assembled with crisp lettuce and juicy tomatoes. Encased in a soft bun, this burger is a symphony of flavors that will satisfy even the most discerning carnivores."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 1,
+    "image": "https://i.ibb.co/S0dghKs/pizza1.jpg",
+    "food_name": "Margherita Pizza",
+    "price": 10.99,
+    "made_by": "Chef Maria Rossi",
+    "food_origin": "Italy",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Experience the authentic taste of Italy with our Margherita Pizza. Crafted with the finest ingredients, this pizza is a celebration of simplicity and flavor. The dough is made from premium flour, water, yeast, and a touch of olive oil, creating a light and airy crust. Topped with rich tomato sauce made from ripe, sun-kissed tomatoes, fresh mozzarella cheese, and fragrant basil leaves, this pizza captures the essence of traditional Italian cuisine.",
+      "making_procedures": "Our skilled chefs start by hand-stretching the pizza dough to achieve the perfect thickness. The dough is then carefully laid out on a stone oven, creating a crisp yet chewy crust. A generous spread of homemade tomato sauce is applied, followed by the placement of fresh mozzarella cheese. The pizza is then adorned with vibrant basil leaves before being baked to golden perfection. The result is a Margherita Pizza that pays homage to its Italian roots, offering a symphony of flavors with every bite."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 2,
+    "image": "https://i.ibb.co/t35m9wD/pizza2.jpg",
+    "food_name": "Pepperoni Supreme",
+    "price": 12.99,
+    "made_by": "Chef Antonio Morelli",
+    "food_origin": "United States",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the bold and savory flavors of our Pepperoni Supreme Pizza. This American classic is loaded with premium pepperoni, melted mozzarella cheese, robust tomato sauce, and a medley of colorful bell peppers and onions. Each bite is a delightful explosion of taste that will satisfy your pizza cravings.",
+      "making_procedures": "Our chefs meticulously craft the Pepperoni Supreme Pizza by starting with a hand-tossed dough that achieves the perfect balance of thickness and crunch. A generous layer of zesty tomato sauce is spread, creating the ideal canvas for the toppings. Premium mozzarella cheese is then evenly distributed, providing a gooey and indulgent base. The pizza is adorned with a generous amount of high-quality pepperoni slices, vibrant bell peppers, and onions. Baked to perfection in our stone oven, the Pepperoni Supreme Pizza is a symphony of flavors that will leave you coming back for more."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 3,
+    "image": "https://i.ibb.co/7Y9gqVw/pizza3.jpg",
+    "food_name": "Vegetarian Delight",
+    "price": 11.99,
+    "made_by": "Chef Isabella Bianchi",
+    "food_origin": "Italy",
+    "quantity": 3,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Embark on a culinary journey with our Vegetarian Delight Pizza. Bursting with the freshest vegetables and a harmony of flavors, this pizza is a delightful choice for those who crave a garden-fresh experience. The combination of colorful bell peppers, juicy tomatoes, black olives, onions, and mushrooms creates a vibrant and satisfying pizza.",
+      "making_procedures": "To craft the Vegetarian Delight Pizza, our chefs begin with a hand-stretched dough, ensuring a light and airy crust. A generous layer of rich tomato sauce serves as the flavorful foundation for the pizza. Premium mozzarella cheese is then added, providing a creamy and indulgent texture. The pizza is topped with a colorful array of bell peppers, tomatoes, black olives, onions, and mushrooms, creating a visually stunning and delicious masterpiece. Baked to perfection, this pizza is a celebration of fresh and wholesome ingredients."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 4,
+    "image": "https://i.ibb.co/mhZ9pyM/pizza4.jpg",
+    "food_name": "BBQ Chicken Delight",
+    "price": 13.99,
+    "made_by": "Chef Roberto Conte",
+    "food_origin": "United States",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Savor the smoky and savory notes of our BBQ Chicken Delight Pizza. This mouthwatering creation combines tender pieces of grilled chicken, tangy barbecue sauce, melted mozzarella cheese, and a medley of red onions and cilantro. It's a flavor-packed experience that will leave your taste buds craving more.",
+      "making_procedures": "To craft the BBQ Chicken Delight Pizza, our chefs start with a hand-tossed dough, creating the perfect canvas for a flavor explosion. A generous spread of tangy barbecue sauce serves as the base, infusing each bite with a smoky and sweet kick. Premium mozzarella cheese is then added, creating a creamy and indulgent layer. The pizza is topped with succulent pieces of grilled chicken, red onions, and fresh cilantro, adding depth and freshness to every slice. Baked to perfection, this pizza is a symphony of flavors that captures the essence of a barbecue feast."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 5,
+    "image": "https://i.ibb.co/Tk1sJS4/pizza5.jpg",
+    "food_name": "Seafood Sensation",
+    "price": 14.99,
+    "made_by": "Chef Sophia Marino",
+    "food_origin": "Italy",
+    "quantity": 4,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Dive into the briny depths with our Seafood Sensation Pizza. This ocean-inspired delight features a delectable combination of succulent shrimp, tender calamari, flavorful clams, and a medley of fresh herbs. It's a seafood lover's dream come true.",
+      "making_procedures": "Crafting the Seafood Sensation Pizza is an art that begins with a hand-stretched dough, creating a light and airy foundation. A luscious layer of tomato sauce serves as the perfect base, offering a burst of flavor with every bite. Premium mozzarella cheese is delicately placed to provide a creamy texture, while the star ingredients—succulent shrimp, tender calamari, and flavorful clams—are scattered generously. Fresh herbs add a finishing touch, enhancing the seafood symphony. Baked to perfection, this pizza is a journey to the seaside, delivering the essence of the ocean to your palate."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 6,
+    "image": "https://i.ibb.co/4VVw4mq/pizza6.jpg",
+    "food_name": "Meat Lover's Feast",
+    "price": 15.99,
+    "made_by": "Chef Marco Ferrari",
+    "food_origin": "United States",
+    "quantity": 8,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge your carnivorous cravings with our Meat Lover's Feast Pizza. Packed with a hearty selection of premium meats, this pizza features savory sausage, crispy bacon, seasoned ground beef, and slices of pepperoni. It's a meaty delight that will satisfy the most robust appetites.",
+      "making_procedures": "Creating the Meat Lover's Feast Pizza is a celebration of bold flavors and hearty indulgence. Our chefs start with a hand-tossed dough, ensuring a substantial base to hold the generous toppings. A robust layer of tomato sauce provides the perfect canvas for the meaty symphony that follows. Premium mozzarella cheese is then added, creating a creamy and indulgent layer. The pizza is generously topped with savory sausage, crispy bacon, seasoned ground beef, and slices of pepperoni. Baked to perfection, this pizza is a carnivorous feast that delivers a meat lover's dream on every slice."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 7,
+    "image": "https://i.ibb.co/T4XsXpp/pizza7.jpg",
+    "food_name": "Mushroom Medley",
+    "price": 11.99,
+    "made_by": "Chef Giuseppe Rossi",
+    "food_origin": "Italy",
+    "quantity": 3,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Experience the earthy richness of our Mushroom Medley Pizza. This vegetarian delight features a variety of mushrooms, including cremini, shiitake, and oyster mushrooms, complemented by creamy goat cheese and a drizzle of truffle oil. It's a gourmet experience that elevates pizza to a new level.",
+      "making_procedures": "Crafting the Mushroom Medley Pizza is a delicate process that begins with a hand-stretched dough, creating a light and airy foundation. A velvety layer of tomato sauce serves as the flavorful base, providing a balance to the richness of the mushrooms. Premium mozzarella cheese is then added, creating a creamy and indulgent layer. The pizza is adorned with a variety of mushrooms, including cremini, shiitake, and oyster mushrooms, offering a diverse and earthy flavor profile. Creamy goat cheese adds a tangy kick, while a drizzle of truffle oil elevates the pizza to gourmet heights. Baked to perfection, this pizza is a celebration of sophisticated flavors that will delight your palate."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 8,
+    "image": "https://i.ibb.co/10sqdgJ/pizza8.jpg",
+    "food_name": "Hawaiian Paradise",
+    "price": 13.99,
+    "made_by": "Chef Luca De Luca",
+    "food_origin": "United States",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Transport yourself to a tropical paradise with our Hawaiian Paradise Pizza. This sweet and savory creation features juicy pineapple, smoky ham, crispy bacon, and a hint of barbecue sauce. It's a vacation for your taste buds.",
+      "making_procedures": "Crafting the Hawaiian Paradise Pizza is an art that begins with a hand-stretched dough, creating a light and airy foundation. A sweet and tangy layer of barbecue sauce serves as the flavorful base, providing a unique twist to the traditional pizza experience. Premium mozzarella cheese is then added, creating a creamy and indulgent layer. The pizza is adorned with generous portions of juicy pineapple, smoky ham, and crispy bacon, creating a perfect balance of sweet and savory. Baked to perfection, this pizza is a culinary journey to the tropics, offering a taste of paradise with every bite."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 9,
+    "image": "https://i.ibb.co/pxBq93g/pizza9.jpg",
+    "food_name": "Truffle Lovers' Delight",
+    "price": 16.99,
+    "made_by": "Chef Francesca Romano",
+    "food_origin": "Italy",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the luxurious flavors of our Truffle Lovers' Delight Pizza. This gourmet masterpiece features a velvety truffle-infused cream sauce, a blend of premium cheeses, wild mushrooms, and a drizzle of truffle oil. It's a decadent experience for true truffle enthusiasts.",
+      "making_procedures": "Creating the Truffle Lovers' Delight Pizza is an intricate process that begins with a hand-stretched dough, ensuring a light and airy foundation. A luscious layer of truffle-infused cream sauce serves as the flavorful base, providing a velvety and luxurious texture. A blend of premium cheeses, including mozzarella and parmesan, is then added, creating a creamy and indulgent layer. The pizza is adorned with a variety of wild mushrooms, offering an earthy and rich flavor profile. A final drizzle of truffle oil elevates the pizza to gourmet heights. Baked to perfection, this pizza is a celebration of opulent flavors that will satisfy the most discerning palate."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 10,
+    "image": "https://i.ibb.co/t4J5bqp/pizza10.jpg",
+    "food_name": "Spicy Diablo",
+    "price": 14.99,
+    "made_by": "Chef Lorenzo Moretti",
+    "food_origin": "Italy",
+    "quantity": 9,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Ignite your taste buds with our Spicy Diablo Pizza. This fiery creation features spicy pepperoni, jalapeños, red chili flakes, and a drizzle of hot honey. It's a bold and adventurous pizza that delivers a kick with every bite.",
+      "making_procedures": "Crafting the Spicy Diablo Pizza is a journey into the realm of bold and daring flavors. Our chefs start with a hand-tossed dough, creating the perfect canvas for the spicy symphony that follows. A zesty layer of tomato sauce serves as the flavorful base, providing a tangy and robust foundation. Premium mozzarella cheese is then added, creating a creamy and indulgent layer. The pizza is generously topped with spicy pepperoni, jalapeños, and red chili flakes, delivering a fiery kick. A drizzle of hot honey adds a touch of sweetness to balance the heat. Baked to perfection, this pizza is a bold and adventurous experience for those who crave a spicy delight."
+    }
+  },
+  {
+    "category": "pizza",
+    "food_id": 7,
+    "image": "https://i.ibb.co/99ffNYX/pizza11.jpg",
+    "food_name": "Mushroom Medley",
+    "price": 11.99,
+    "made_by": "Chef Giuseppe Rossi",
+    "food_origin": "Italy",
+    "quantity": 3,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Experience the earthy richness of our Mushroom Medley Pizza. This vegetarian delight features a variety of mushrooms, including cremini, shiitake, and oyster mushrooms, complemented by creamy goat cheese and a drizzle of truffle oil. It's a gourmet experience that elevates pizza to a new level.",
+      "making_procedures": "Crafting the Mushroom Medley Pizza is a delicate process that begins with a hand-stretched dough, creating a light and airy foundation. A velvety layer of tomato sauce serves as the flavorful base, providing a balance to the richness of the mushrooms. Premium mozzarella cheese is then added, creating a creamy and indulgent layer. The pizza is adorned with a variety of mushrooms, including cremini, shiitake, and oyster mushrooms, offering a diverse and earthy flavor profile. Creamy goat cheese adds a tangy kick, while a drizzle of truffle oil elevates the pizza to gourmet heights. Baked to perfection, this pizza is a celebration of sophisticated flavors that will delight your palate."
+    }
+  },
+  {
+    "category": "steak",
+    "food_id": 1,
+    "image": "https://i.ibb.co/qJJXzTX/steak1.jpg",
+    "food_name": "Prime Ribeye Delight",
+    "price": 24.99,
+    "made_by": "Chef Anthony Russo",
+    "food_origin": "United States",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the succulence of our Prime Ribeye Delight, a gastronomic journey through the heart of American culinary excellence. This masterpiece starts with a generous cut of prime ribeye, meticulously selected for its marbling and tenderness. Our chefs then craft a flavorful marinade using a blend of herbs, garlic, and a hint of smoky spices, enhancing the natural richness of the meat.",
+      "making_procedures": "The artistry of our Prime Ribeye Delight is in the preparation. The marinated ribeye is expertly grilled to perfection, creating a seared crust that locks in the juices while preserving the tender texture. As the steak sizzles on the grill, the enticing aroma fills the air, foreshadowing the culinary delight to come. Served with a side of garlic mashed potatoes and roasted vegetables, this dish is a celebration of flavors and textures. Chef Anthony Russo's expertise shines through in every aspect of this dish, making it a true delight for steak enthusiasts."
+    }
+  },
+  {
+    "category": "steak",
+    "food_id": 2,
+    "image": "https://i.ibb.co/f8dyh2j/steak8.jpg",
+    "food_name": "Tuscan Grilled T-Bone",
+    "price": 29.99,
+    "made_by": "Chef Isabella Rossi",
+    "food_origin": "Italy",
+    "quantity": 4,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Embark on a culinary journey to Tuscany with our Tuscan Grilled T-Bone. This exquisite dish features a premium T-bone steak, selected for its exceptional quality and flavor. The marinade, inspired by traditional Tuscan herbs and olive oil, infuses the steak with a symphony of Mediterranean flavors.",
+      "making_procedures": "Chef Isabella Rossi brings the charm of Tuscan cuisine to life with the careful preparation of this T-bone masterpiece. The steak is marinated to perfection, allowing the flavors to harmonize. Grilled over an open flame, the T-bone achieves a delightful smokiness while maintaining its juiciness. Served with a side of rosemary-infused roasted potatoes and sautéed spinach, this dish is a tribute to the rustic elegance of Tuscan dining. Each bite captures the essence of Italy, making it a must-try for connoisseurs of fine cuisine."
+    }
+  },
+  {
+    "category": "steak",
+    "food_id": 3,
+    "image": "https://i.ibb.co/C0Z2B7j/steak7.jpg",
+    "food_name": "Sizzling Garlic Butter Sirloin",
+    "price": 22.99,
+    "made_by": "Chef Miguel Hernandez",
+    "food_origin": "Mexico",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Transport your taste buds to the vibrant flavors of Mexico with our Sizzling Garlic Butter Sirloin. This dish showcases a premium sirloin steak, seasoned with a zesty blend of garlic, lime, and Mexican spices. The finishing touch is a luscious garlic butter sauce that elevates the entire dining experience.",
+      "making_procedures": "Chef Miguel Hernandez infuses his culinary expertise and Mexican heritage into every aspect of this dish. The sirloin is carefully seasoned and grilled to perfection, creating a mouthwatering char on the outside while preserving the tender juiciness within. Served with a side of cilantro-lime rice and grilled corn, this dish is a celebration of bold flavors and culinary passion. Experience the richness of Mexican cuisine with every flavorful bite of our Sizzling Garlic Butter Sirloin."
+    }
+  },
+  {
+    "category": "steak",
+    "food_id": 4,
+    "image": "https://i.ibb.co/m58T2hx/steak2.jpg",
+    "food_name": "Peppercorn Crusted Filet Mignon",
+    "price": 32.99,
+    "made_by": "Chef Gabrielle Dupont",
+    "food_origin": "France",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the refined elegance of our Peppercorn Crusted Filet Mignon, a French-inspired culinary delight. This dish features a premium filet mignon, expertly crusted with a blend of crushed peppercorns, herbs, and Dijon mustard, creating a symphony of flavors on the palate.",
+      "making_procedures": "Chef Gabrielle Dupont brings her French culinary expertise to the forefront with the preparation of this Filet Mignon masterpiece. The filet is carefully crusted and seared to perfection, locking in the rich flavors. Served with a velvety red wine reduction and a side of gratin dauphinois, this dish is a nod to the sophistication of French cuisine. Every bite is a journey through the culinary landscapes of France, making our Peppercorn Crusted Filet Mignon a true gastronomic experience."
+    }
+  },
+  {
+    "category": "steak",
+    "food_id": 5,
+    "image": "https://i.ibb.co/dcMG36B/steak3.jpg",
+    "food_name": "Argentinian Chimichurri Skirt Steak",
+    "price": 26.99,
+    "made_by": "Chef Alejandro Fernandez",
+    "food_origin": "Argentina",
+    "quantity": 8,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Experience the vibrant flavors of Argentina with our Argentinian Chimichurri Skirt Steak. This dish features a premium skirt steak, marinated in a zesty chimichurri sauce made from fresh parsley, garlic, and Argentinean spices.",
+      "making_procedures": "Chef Alejandro Fernandez, hailing from the heart of Argentina, infuses his culinary heritage into every aspect of this dish. The skirt steak is marinated in a traditional chimichurri sauce, allowing the flavors to meld. Grilled to perfection, the steak achieves a tantalizing smokiness while remaining tender and juicy. Served with a side of Argentinean-style grilled vegetables and crispy yuca fries, this dish is a celebration of the bold and vibrant flavors of Argentina. Immerse yourself in the culinary traditions of South America with our Argentinian Chimichurri Skirt Steak."
+    }
+  },
+  {
+    "category": "steak",
+    "food_id": 6,
+    "image": "https://i.ibb.co/xjv5Xvh/steak4.jpg",
+    "food_name": "Japanese Wagyu Ribeye",
+    "price": 99.99,
+    "made_by": "Chef Hiroshi Tanaka",
+    "food_origin": "Japan",
+    "quantity": 3,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the epitome of luxury with our Japanese Wagyu Ribeye, a culinary masterpiece featuring the finest marbled beef from Japan. The intensely marbled Wagyu ribeye promises a melt-in-your-mouth experience, while the delicate umami flavor sets it apart from other steaks.",
+      "making_procedures": "Chef Hiroshi Tanaka, a master in the art of Japanese cuisine, meticulously prepares this Wagyu Ribeye to perfection. The steak is delicately seared on a teppanyaki grill, allowing the marbled fat to render and create a buttery texture. Served with a side of shiitake mushroom miso soup and Japanese-style garlic fried rice, this dish is a celebration of the delicate flavors and craftsmanship of Japanese culinary traditions. Experience the unparalleled richness of our Japanese Wagyu Ribeye, a true indulgence for steak aficionados."
+    }
+  },
+  {
+    "category": "steak",
+    "food_id": 7,
+    "image": "https://i.ibb.co/P6ZmKDd/steak5-Copy.jpg",
+    "food_name": "Brazilian Picanha",
+    "price": 23.99,
+    "made_by": "Chef Luis Oliveira",
+    "food_origin": "Brazil",
+    "quantity": 9,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Embark on a culinary journey to Brazil with our Brazilian Picanha, a savory delight featuring the prized cut of top sirloin. The Picanha is seasoned with rock salt and grilled to perfection, capturing the authentic flavors of Brazilian churrasco.",
+      "making_procedures": "Chef Luis Oliveira, a native of Brazil, brings the essence of Brazilian barbecue to your table with the preparation of this Picanha. The top sirloin is seasoned with rock salt to enhance its natural flavors and grilled to achieve the perfect char. Served with a side of feijoada and traditional farofa, this dish is a tribute to the rich and diverse culinary traditions of Brazil. Immerse yourself in the vibrant and bold flavors of South America with our Brazilian Picanha."
+    }
+  },
+  {
+    "category": "steak",
+    "food_id": 8,
+    "image": "https://i.ibb.co/JzwGcBs/steak6.jpg",
+    "food_name": "Mediterranean Herb-Infused Strip Steak",
+    "price": 28.99,
+    "made_by": "Chef Sophia Katsaros",
+    "food_origin": "Greece",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Savor the flavors of the Mediterranean with our Herb-Infused Strip Steak, a culinary delight featuring a premium strip steak infused with a blend of Greek herbs, garlic, and olive oil. This dish promises a journey through the sun-drenched landscapes of Greece.",
+      "making_procedures": "Chef Sophia Katsaros, inspired by the rich culinary heritage of Greece, expertly prepares this strip steak to capture the essence of Mediterranean flavors. The steak is infused with a blend of aromatic herbs and grilled to perfection, creating a harmony of flavors. Served with a side of tzatziki and Greek salad, this dish is a celebration of the freshness and simplicity that defines Greek cuisine. Immerse yourself in the warmth of the Mediterranean with our Herb-Infused Strip Steak."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 1,
+    "image": "https://i.ibb.co/jW9vCnP/french-fries-10.jpg",
+    "food_name": "Golden Classic Fries",
+    "price": 4.99,
+    "made_by": "Chef Marie Leclerc",
+    "food_origin": "France",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the crispiness of our Golden Classic Fries, a timeless French delicacy made from premium potatoes sourced from the fertile fields of France. The simple yet elegant combination of potatoes, salt, and oil creates a symphony of flavors and textures that will transport you to the bustling streets of Paris.",
+      "making_procedures": "Chef Marie Leclerc, with her French culinary expertise, ensures that each batch of our Golden Classic Fries is a masterpiece. The process begins with selecting the finest potatoes, hand-cut into uniform strips to guarantee a consistent texture. The fries are then double-fried to achieve the perfect balance of a golden exterior and a fluffy interior. Seasoned with a touch of sea salt, these fries are served piping hot and ready to be enjoyed. Immerse yourself in the authenticity of French street food with our Golden Classic Fries."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 2,
+    "image": "https://i.ibb.co/qJJXzTX/steak1.jpg",
+    "food_name": "Truffle Parmesan Fries",
+    "price": 7.99,
+    "made_by": "Chef Alessandro Rossi",
+    "food_origin": "Italy",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Elevate your French fry experience with our Truffle Parmesan Fries, a sophisticated blend of flavors inspired by the culinary traditions of Italy. These fries feature a drizzle of truffle oil and a generous sprinkle of Parmesan cheese, creating a decadent and savory treat.",
+      "making_procedures": "Chef Alessandro Rossi, drawing from his Italian roots, brings a touch of luxury to our Truffle Parmesan Fries. The fries are hand-cut and cooked to a crispy perfection before being tossed in aromatic truffle oil. To complete the indulgence, they are generously dusted with freshly grated Parmesan cheese. Served with a side of truffle aioli, these fries are a celebration of the rich and luxurious flavors that characterize Italian cuisine. Treat yourself to a taste of elegance with our Truffle Parmesan Fries."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 3,
+    "image": "https://i.ibb.co/qCv1jL0/french-fries-8.jpg",
+    "food_name": "Loaded Bacon Cheese Fries",
+    "price": 8.99,
+    "made_by": "Chef Jack Thompson",
+    "food_origin": "United States",
+    "quantity": 4,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the ultimate comfort food experience with our Loaded Bacon Cheese Fries, a hearty American favorite that combines crispy fries with the irresistible duo of crispy bacon and melted cheese. Each bite is a celebration of bold flavors and indulgence.",
+      "making_procedures": "Chef Jack Thompson, with his passion for American comfort food, brings you a plate of Loaded Bacon Cheese Fries that will satisfy your cravings. The fries are cooked to golden perfection and topped with crispy bacon bits and a generous layer of melted cheddar and Monterey Jack cheeses. The ensemble is then baked to perfection, creating a gooey and savory delight. Served with a side of ranch dressing, these fries are perfect for sharing or savoring on your own. Treat yourself to the classic flavors of American comfort with our Loaded Bacon Cheese Fries."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 4,
+    "image": "https://i.ibb.co/58sDzDb/french-fries-7.jpg",
+    "food_name": "Spicy Cajun Sweet Potato Fries",
+    "price": 6.99,
+    "made_by": "Chef Janelle Davis",
+    "food_origin": "United States",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Experience a fusion of flavors with our Spicy Cajun Sweet Potato Fries, a Southern-inspired twist on the classic French fry. Made with sweet potatoes and a blend of bold Cajun spices, these fries offer a perfect balance of sweetness and heat.",
+      "making_procedures": "Chef Janelle Davis, drawing inspiration from the Southern culinary tradition, presents our Spicy Cajun Sweet Potato Fries. The sweet potatoes are cut into fries, seasoned with a mix of Cajun spices, and baked to a crispy perfection. The result is a delightful medley of sweet and spicy flavors that will tantalize your taste buds. Served with a side of chipotle mayo, these fries are a unique and flavorful addition to your dining experience. Immerse yourself in the bold and vibrant tastes of the American South with our Spicy Cajun Sweet Potato Fries."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 5,
+    "image": "https://i.ibb.co/QmdGP3H/french-fries-6.jpg",
+    "food_name": "Mediterranean Herb Fries",
+    "price": 5.99,
+    "made_by": "Chef Sophia Katsaros",
+    "food_origin": "Greece",
+    "quantity": 8,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Transport your taste buds to the shores of the Mediterranean with our Mediterranean Herb Fries, a delightful blend of Greek herbs and spices that elevate the classic French fry. Made with love and authenticity, these fries capture the essence of Greek cuisine.",
+      "making_procedures": "Chef Sophia Katsaros infuses her Greek heritage into every aspect of our Mediterranean Herb Fries. The fries are seasoned with a mix of aromatic Greek herbs, garlic, and a hint of lemon zest, creating a flavorful and refreshing experience. Served with a side of tzatziki sauce, these fries are a celebration of the simplicity and freshness that characterizes Greek cuisine. Immerse yourself in the vibrant and savory flavors of the Mediterranean with our Mediterranean Herb Fries."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 6,
+    "image": "https://i.ibb.co/b6CyTB6/french-fries-5.jpg",
+    "food_name": "Curry Masala Fries",
+    "price": 7.99,
+    "made_by": "Chef Raj Patel",
+    "food_origin": "India",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Embark on a culinary journey to India with our Curry Masala Fries, a tantalizing fusion of classic French fries with the aromatic spices of Indian cuisine. These fries, seasoned with a blend of curry spices, promise a symphony of flavors that will transport you to the bustling streets of Mumbai.",
+      "making_procedures": "Chef Raj Patel, drawing inspiration from the rich and diverse culinary traditions of India, presents our Curry Masala Fries. The fries are hand-cut and seasoned with a fragrant mix of curry spices, including cumin, coriander, and turmeric. The result is a perfect harmony of savory and aromatic flavors that will awaken your senses. Served with a side of mint chutney, these fries are a celebration of the vibrant street food culture of India. Immerse yourself in the bold and aromatic spices of India with our Curry Masala Fries."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 7,
+    "image": "https://i.ibb.co/8PtdLzT/french-fries-3.jpg",
+    "food_name": "Garlic Truffle Fries",
+    "price": 9.99,
+    "made_by": "Chef Isabella Rossi",
+    "food_origin": "Italy",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Indulge in the luxurious flavors of our Garlic Truffle Fries, a culinary masterpiece that combines the rich aroma of truffle oil with the savory goodness of garlic. Inspired by Italian cuisine, these fries are a decadent treat for the senses.",
+      "making_procedures": "Chef Isabella Rossi, with her passion for the elegance of Italian flavors, presents our Garlic Truffle Fries. The fries are cooked to a golden crispiness and tossed in a truffle oil-infused garlic seasoning, creating an irresistible aroma and taste. Served with a side of aioli dipping sauce, these fries are a celebration of the sophisticated and luxurious flavors that characterize Italian cuisine. Immerse yourself in the decadence of our Garlic Truffle Fries, a true indulgence for your palate."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 8,
+    "image": "https://i.ibb.co/kB7QJfW/french-fries-1.jpg",
+    "food_name": "Chili Cheese Fries",
+    "price": 8.99,
+    "made_by": "Chef Carlos Rodriguez",
+    "food_origin": "Mexico",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Experience the bold and savory flavors of Mexico with our Chili Cheese Fries, a fiesta for your taste buds. These fries are smothered in a spicy chili con carne and topped with melted cheddar cheese, creating a perfect fusion of Tex-Mex delight.",
+      "making_procedures": "Chef Carlos Rodriguez, drawing inspiration from the vibrant street food culture of Mexico, brings you our Chili Cheese Fries. The fries are cooked to a golden perfection and generously covered with a hearty chili con carne, made with a blend of spices, ground beef, and kidney beans. Topped with a layer of melted cheddar cheese, these fries are a celebration of the bold and savory flavors that characterize Mexican cuisine. Served with a side of guacamole, these Chili Cheese Fries are perfect for sharing or savoring on your own. Immerse yourself in the festive and flavorful experience of Mexico with our Chili Cheese Fries."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 9,
+    "image": "https://i.ibb.co/WGs15TL/french-fries-2.jpg",
+    "food_name": "Sweet Chili Lime Fries",
+    "price": 6.99,
+    "made_by": "Chef Mia Kim",
+    "food_origin": "South Korea",
+    "quantity": 8,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Savor the perfect blend of sweet, spicy, and tangy with our Sweet Chili Lime Fries, inspired by the vibrant flavors of South Korea. These fries are seasoned with a zesty sweet chili lime glaze, creating a unique and delightful taste experience.",
+      "making_procedures": "Chef Mia Kim, infusing her culinary creations with the dynamic flavors of South Korea, presents our Sweet Chili Lime Fries. The fries are cooked to a golden crispiness and coated in a special glaze made with sweet chili sauce, fresh lime juice, and a hint of garlic. The result is a perfect harmony of sweet, spicy, and tangy flavors that will tantalize your taste buds. Served with a side of kimchi aioli, these fries are a celebration of the bold and innovative flavors that characterize South Korean cuisine. Immerse yourself in the vibrant and dynamic taste experience of our Sweet Chili Lime Fries."
+    }
+  },
+  {
+    "category": "French Fries",
+    "food_id": 10,
+    "image": "https://i.ibb.co/94YxJjD/french-fries-4.jpg",
+    "food_name": "Crispy Cajun Zucchini Fries",
+    "price": 7.99,
+    "made_by": "Chef Andre Dubois",
+    "food_origin": "France",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Experience the bold and savory flavors of Mexico with our Chili Cheese Fries, a fiesta for your taste buds. These fries are smothered in a spicy chili con carne and topped with melted cheddar cheese, creating a perfect fusion of Tex-Mex delight.",
+      "making_procedures": "Chef Carlos Rodriguez, drawing inspiration from the vibrant street food culture of Mexico, brings you our Chili Cheese Fries. The fries are cooked to a golden perfection and generously covered with a hearty chili con carne, made with a blend of spices, ground beef, and kidney beans. Topped with a layer of melted cheddar cheese, these fries are a celebration of the bold and savory flavors that characterize Mexican cuisine. Served with a side of guacamole, these Chili Cheese Fries are perfect for sharing or savoring on your own. Immerse yourself in the festive and flavorful experience of Mexico with our Chili Cheese Fries."
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 1,
+    "image": "https://i.ibb.co/1r4xptG/chicken-11.jpg",
+    "food_name": "Spicy Buffalo Wings",
+    "price": 12.99,
+    "made_by": "Chef John",
+    "food_origin": "United States",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, hot sauce, butter, garlic powder, cayenne pepper, salt",
+      "making_procedures": "Start by preheating your oven to 400°F. In a large bowl, toss the chicken wings with hot sauce, melted butter, garlic powder, cayenne pepper, and salt. Place the wings on a baking sheet and bake for 45 minutes or until crispy. Enjoy these spicy buffalo wings with your favorite dipping sauce!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 2,
+    "image": "https://i.ibb.co/Pj9bWgG/chicken-10.jpg",
+    "food_name": "Honey BBQ Wings",
+    "price": 14.99,
+    "made_by": "Chef Maria",
+    "food_origin": "United States",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, BBQ sauce, honey, garlic, onion powder, paprika",
+      "making_procedures": "For these delicious Honey BBQ Wings, start by marinating the chicken wings in a mixture of BBQ sauce, honey, minced garlic, onion powder, and paprika. Let them marinate for at least 2 hours. Grill or bake the wings until golden brown and enjoy this sweet and savory dish!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 3,
+    "image": "https://i.ibb.co/KyfNjTd/chicken-9.jpg",
+    "food_name": "Teriyaki Glazed Wings",
+    "price": 13.99,
+    "made_by": "Chef Aiko",
+    "food_origin": "Japan",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, soy sauce, sake, mirin, sugar, garlic, ginger",
+      "making_procedures": "Create a flavorful teriyaki glaze by combining soy sauce, sake, mirin, sugar, minced garlic, and grated ginger. Marinate the chicken wings in this sauce for at least 4 hours. Grill or bake until the wings are cooked through and the glaze is caramelized. Serve with a sprinkle of sesame seeds!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 4,
+    "image": "https://i.ibb.co/VT1WRV3/chicken-8.jpg",
+    "food_name": "Lemon Pepper Wings",
+    "price": 11.99,
+    "made_by": "Chef Michael",
+    "food_origin": "United States",
+    "quantity": 4,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, lemon zest, black pepper, salt, olive oil",
+      "making_procedures": "Zest fresh lemons and mix the zest with black pepper, salt, and a drizzle of olive oil. Toss the chicken wings in this flavorful mixture and bake until crispy. These Lemon Pepper Wings are a zesty and refreshing twist to the classic chicken wings!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 5,
+    "image": "https://i.ibb.co/KyfNjTd/chicken-9.jpg",
+    "food_name": "Garlic Parmesan Wings",
+    "price": 15.99,
+    "made_by": "Chef Isabella",
+    "food_origin": "Italy",
+    "quantity": 8,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, garlic, parmesan cheese, butter, parsley",
+      "making_procedures": "Melt butter and sauté minced garlic until fragrant. Toss the cooked chicken wings in this garlic butter mixture along with grated parmesan cheese and chopped parsley. Bake until the wings are golden and the cheese is melted. Delight in the rich flavors of Garlic Parmesan Wings!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 6,
+    "image": "https://i.ibb.co/0t91rw4/chicken-6.jpg",
+    "food_name": "Soy Ginger Wings",
+    "price": 12.99,
+    "made_by": "Chef Hiroshi",
+    "food_origin": "Japan",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, soy sauce, ginger, garlic, rice vinegar, sesame oil",
+      "making_procedures": "Marinate chicken wings in a mixture of soy sauce, grated ginger, minced garlic, rice vinegar, and a dash of sesame oil. Grill or bake until the wings are cooked through and have a delicious Asian-inspired flavor. Enjoy these Soy Ginger Wings with a side of steamed rice!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 7,
+    "image": "https://i.ibb.co/9VMC1XN/chicken-5.jpg",
+    "food_name": "Cajun Spice Wings",
+    "price": 13.99,
+    "made_by": "Chef Antoine",
+    "food_origin": "United States",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, Cajun seasoning, paprika, garlic powder, onion powder",
+      "making_procedures": "Coat chicken wings in a mixture of Cajun seasoning, paprika, garlic powder, and onion powder. Bake until the wings are crispy and have a spicy kick. These Cajun Spice Wings are perfect for those who love bold and flavorful dishes!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 8,
+    "image": "https://i.ibb.co/jgYvnNR/chicken-4.jpg",
+    "food_name": "Mango Habanero Wings",
+    "price": 14.99,
+    "made_by": "Chef Luis",
+    "food_origin": "Mexico",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, mango, habanero pepper, lime juice, honey",
+      "making_procedures": "Create a sweet and spicy glaze by blending mango, habanero pepper, lime juice, and honey. Toss the wings in this flavorful mixture and bake until they are golden and sticky. Mango Habanero Wings are a tantalizing combination of sweet and heat!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 9,
+    "image": "https://i.ibb.co/qsMQfm4/chicken-2.jpg",
+    "food_name": "Lime Cilantro Wings",
+    "price": 11.99,
+    "made_by": "Chef Sofia",
+    "food_origin": "Mexico",
+    "quantity": 4,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, lime, cilantro, garlic, olive oil",
+      "making_procedures": "Marinate chicken wings in a mixture of fresh lime juice, chopped cilantro, minced garlic, and olive oil. Grill or bake until the wings are cooked through and have a zesty and herby flavor. Lime Cilantro Wings are a refreshing and light option for wing enthusiasts!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 10,
+    "image": "https://i.ibb.co/55GZpn6/chicken-3.jpg",
+    "food_name": "Sesame Teriyaki Wings",
+    "price": 15.99,
+    "made_by": "Chef Naomi",
+    "food_origin": "Japan",
+    "quantity": 8,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, soy sauce, teriyaki sauce, sesame oil, sesame seeds",
+      "making_procedures": "Coat chicken wings in a mixture of soy sauce, teriyaki sauce, sesame oil, and sprinkle sesame seeds. Bake until the wings are glossy and have a delicious umami flavor. Sesame Teriyaki Wings are a perfect blend of sweet and savory!"
+    }
+  },
+  {
+    "category": "Wings",
+    "food_id": 11,
+    "image": "https://i.ibb.co/C9j1Rhf/chicken-1.jpg",
+    "food_name": "Classic BBQ Wings",
+    "price": 12.99,
+    "made_by": "Chef Benjamin",
+    "food_origin": "United States",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Chicken wings, BBQ sauce, brown sugar, paprika, garlic powder",
+      "making_procedures": "Coat chicken wings in a classic BBQ sauce made with a blend of BBQ sauce, brown sugar, paprika, and garlic powder. Bake until the wings are caramelized and have that irresistible BBQ flavor. Enjoy these Classic BBQ Wings for a timeless and crowd-pleasing dish!"
+    }
+  },
+  {
+    "category": "Dessert",
+    "food_id": 1,
+    "image": "https://i.ibb.co/r08LTzD/dessert-2.jpg",
+    "food_name": "Chocolate Lava Cake",
+    "price": 8.99,
+    "made_by": "Chef Emily",
+    "food_origin": "France",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Dark chocolate, butter, sugar, eggs, flour, vanilla extract",
+      "making_procedures": "Preheat your oven and melt dark chocolate and butter. In a separate bowl, mix sugar, eggs, and vanilla extract. Combine the melted chocolate with the egg mixture, add flour, and mix until smooth. Pour the batter into ramekins and bake until the edges are set but the center is still gooey. Serve warm and enjoy the decadent experience of a Chocolate Lava Cake!"
+    }
+  },
+  {
+    "category": "Dessert",
+    "food_id": 2,
+    "image": "https://i.ibb.co/QNqDxbb/dessert-4.jpg",
+    "food_name": "Tiramisu",
+    "price": 10.99,
+    "made_by": "Chef Giovanni",
+    "food_origin": "Italy",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Ladyfingers, espresso, mascarpone cheese, eggs, sugar, cocoa powder",
+      "making_procedures": "Dip ladyfingers in strong brewed espresso and layer them with a mixture of mascarpone cheese, eggs, and sugar. Repeat the layers and refrigerate. Dust with cocoa powder before serving. Tiramisu is a classic Italian dessert that combines the richness of mascarpone with the bold flavor of espresso!"
+    }
+  },
+  {
+    "category": "Dessert",
+    "food_id": 3,
+    "image": "https://i.ibb.co/nkYvJCt/dessert-6.jpg",
+    "food_name": "Strawberry Cheesecake",
+    "price": 12.99,
+    "made_by": "Chef Sarah",
+    "food_origin": "United States",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Graham crackers, cream cheese, sugar, eggs, vanilla extract, strawberries",
+      "making_procedures": "Create a graham cracker crust and layer it with a mixture of cream cheese, sugar, eggs, and vanilla extract. Bake until set, then refrigerate. Top with fresh strawberries before serving. Strawberry Cheesecake is a delightful combination of creamy and fruity flavors!"
+    }
+  },
+  {
+    "category": "Dessert",
+    "food_id": 4,
+    "image": "https://i.ibb.co/HzD7KxL/dessert-1.jpg",
+    "food_name": "Creme Brulee",
+    "price": 11.99,
+    "made_by": "Chef Jacques",
+    "food_origin": "France",
+    "quantity": 4,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Heavy cream, egg yolks, sugar, vanilla bean, brown sugar",
+      "making_procedures": "Infuse heavy cream with a vanilla bean, then mix with egg yolks and sugar. Bake the custard until set, then refrigerate. Sprinkle brown sugar on top and caramelize with a torch before serving. Creme Brulee is a classic French dessert with a crispy caramelized top!"
+    }
+  },
+  {
+    "category": "Dessert",
+    "food_id": 5,
+    "image": "https://i.ibb.co/bbmf361/dessert-3.jpg",
+    "food_name": "Mango Sorbet",
+    "price": 9.99,
+    "made_by": "Chef Mia",
+    "food_origin": "Thailand",
+    "quantity": 5,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Mangoes, sugar, water, lime juice",
+      "making_procedures": "Blend ripe mangoes with sugar, water, and lime juice. Freeze the mixture and churn it in an ice cream maker. Mango Sorbet is a refreshing and tropical dessert that captures the natural sweetness of mangoes!"
+    }
+  },
+  {
+    "category": "Dessert",
+    "food_id": 6,
+    "image": "https://i.ibb.co/6vGKvzp/dessert-5.jpg",
+    "food_name": "Key Lime Pie",
+    "price": 10.99,
+    "made_by": "Chef Olivia",
+    "food_origin": "United States",
+    "quantity": 6,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Graham cracker crust, condensed milk, key lime juice, egg yolks, whipped cream",
+      "making_procedures": "Mix condensed milk with key lime juice and egg yolks, then pour into a graham cracker crust. Bake until set, then refrigerate. Top with whipped cream before serving. Key Lime Pie is a tangy and creamy dessert with a hint of citrus!"
+    }
+  },
+  {
+    "category": "Dessert",
+    "food_id": 7,
+    "image": "https://i.ibb.co/Sx5fCQn/dessert-7.jpg",
+    "food_name": "Banoffee Pie",
+    "price": 12.99,
+    "made_by": "Chef William",
+    "food_origin": "United Kingdom",
+    "quantity": 7,
+    "order_count": 0,
+    "description": {
+      "ingredients": "Digestive biscuits, bananas, toffee sauce, whipped cream, chocolate shavings",
+      "making_procedures": "Create a base with digestive biscuits, top with sliced bananas, and cover with layers of toffee sauce. Refrigerate and finish with a generous layer of whipped cream and chocolate shavings. Banoffee Pie is a British classic that combines the richness of toffee with the freshness of bananas!"
+    }
+  }
+]

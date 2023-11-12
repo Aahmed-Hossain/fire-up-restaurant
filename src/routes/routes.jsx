@@ -5,6 +5,8 @@ import Mainlayout from "../layouts/Mainlayout";
 import Register from "../pages/Register/Register";
 import Login from "../pages/Login/Login";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import AllFood from "../pages/AllFoods/AllFood";
+import Blogs from "../pages/Blogs/Blogs";
 
 
 const routes = createBrowserRouter([
@@ -24,6 +26,14 @@ const routes = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: 'allFoods',
+                element:<AllFood></AllFood>
+            },
+            {
+                path: 'blogs',
+                element:<Blogs></Blogs>
             }
         ]
     }
