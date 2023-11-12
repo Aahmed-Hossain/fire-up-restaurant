@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const FoodCard = ({ food }) => {
-    const { food_name, image, price } = food;
+    const {_id, food_name, image, price } = food;
     
     return (
       <div className="my-4">
@@ -18,9 +20,9 @@ const FoodCard = ({ food }) => {
               <span className="font-bold text-gray-900 dark:text-gray-200">
                 Price: ${price}
               </span>
-              <button className="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
+              <Link to={`foodDetails/${_id}`} className="px-2 py-2 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
                  See Details
-              </button>
+              </Link>
             </div>
           </div>
         </div>

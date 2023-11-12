@@ -7,6 +7,7 @@ import Login from "../pages/Login/Login";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import AllFood from "../pages/AllFoods/AllFood";
 import Blogs from "../pages/Blogs/Blogs";
+import FoodDetails from "../components/FoodDetails/FoodDetails";
 
 
 const routes = createBrowserRouter([
@@ -34,7 +35,18 @@ const routes = createBrowserRouter([
             {
                 path: 'blogs',
                 element:<Blogs></Blogs>
+            },
+            {
+                path: '/foodDetails/:id',
+                element: <FoodDetails></FoodDetails>,
+                loader: ({params})=> fetch(`http://localhost:5000/allFoods/${params.id}`)
+            },
+            {
+                path: 'allFoods/foodDetails/:id',
+                element: <FoodDetails></FoodDetails>,
+                loader: ({params})=> fetch(`http://localhost:5000/allFoods/${params.id}`)
             }
+            
         ]
     }
 ])
