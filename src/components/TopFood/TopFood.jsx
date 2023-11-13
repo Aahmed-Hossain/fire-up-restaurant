@@ -36,7 +36,7 @@ const TopFood = () => {
       </p>
       <div className="grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
         {
-        foods?.data?.slice(0, 9).map((food, index) => (
+        foods?.data?.result?.slice(0, 9).map((food, index) => (
             <FoodCard 
             key={index}
             food={food}
@@ -45,7 +45,7 @@ const TopFood = () => {
         }
       </div>
       <div className="mt-4 flex  mx-auto">
-      <Link className=" px-16 mx-auto py-2 da font-extrabold border-4 border-gray-600 bg-[#FF3811] rounded-md cursor-pointer text-white dark:text-gray-200" to={'/allFoods'}>See All</Link>
+      <Link className="my-8 px-16 mx-auto py-2 da font-bold border-2 border-gray-600 bg-[#FF3811] rounded-md cursor-pointer text-xl text-white dark:text-gray-200" to={'/allFoods'}>See All</Link>
 
       </div>
     </div>

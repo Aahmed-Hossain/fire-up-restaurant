@@ -1,4 +1,4 @@
-import { useLoaderData, useNavigation, } from "react-router-dom";
+import { Link, useLoaderData, useNavigation, } from "react-router-dom";
 import Loading from "../Loading";
 
 const FoodDetails = () => {
@@ -37,7 +37,7 @@ const FoodDetails = () => {
          <h6 className="font-semibold">Available Quantity: <span className="text-red-500 font-bold text-xl">
          {singleFood.quantity}</span></h6>
          <div className=" flex mx-auto">
-      <button className="my-8 px-16 mx-auto py-2 da font-bold border-2 border-gray-600 bg-[#FF3811] rounded-md cursor-pointer text-xl text-white dark:text-gray-200" to={'/allFoods'}>Order Now</button>
+      <Link to={`/orderNow/${singleFood._id}`} className="my-8 px-16 mx-auto py-2 da font-bold border-2 border-gray-600 bg-[#FF3811] rounded-md cursor-pointer text-xl text-white dark:text-gray-200">Order Now</Link>
 
       </div>
         </div>
