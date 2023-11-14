@@ -1,5 +1,6 @@
-import { Link, useLoaderData, useNavigation, } from "react-router-dom";
+import { Link, useLoaderData, useNavigation,  } from "react-router-dom";
 import Loading from "../Loading";
+
 
 const FoodDetails = () => {
     
