@@ -5,11 +5,12 @@ import FoodCard from "../../components/TopFood/FoodCard";
 import { useState } from "react";
 
 const AllFood = () => {
+  const [price, setPrice] = useState('')
   const [page, setPage] = useState(1);
   const limit = 9;
   const hookAxios = useAxios();
   const getFoods = async () => {
-    const res = await hookAxios.get(`/allFoods?page=${page}&limit=${limit}`);
+    const res = await hookAxios.get(`/allFoods?page=${page}&limit=${limit}&sortField=price&sortOrder=${price}`);
     return res;
   };
   const {
@@ -39,6 +40,19 @@ const AllFood = () => {
   }
   return (
     <div className="my-6">
+      {/* category and sorting  */}
+      <div className="form-control">
+      <label className="label">
+         <span className="label-text">Sort By Price</span>
+        </label>
+        <select className="input input-bordered"
+        onChange={(e)=>setPrice(e.target.value)}>
+          <option disabled selected>Choose One</option>
+          <option value="asc">Low to High</option>
+          <option value="dsc">High To Low</option>
+        </select>
+      </div>
+      {/* all foods below */}
       <div className="grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
         {foods?.data?.result?.map((food, index) => (
           <FoodCard key={index} food={food}></FoodCard>
