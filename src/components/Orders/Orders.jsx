@@ -3,7 +3,7 @@ import Loading from "../Loading";
 import useAxios from "../../hooks/useAxios";
 import useAuth from "../../hooks/useAuth";
 import OrderList from "./OrderList";
-
+import banner1 from '../../assets/images/banner1.jpg'
 const Orders = () => {
     const {user} = useAuth() 
     const hookAxios = useAxios();
@@ -27,6 +27,10 @@ const Orders = () => {
   }
     return (
         <div className="space-y-3">
+          <div className="relative h-[15rem]">
+  <img src={banner1} className="h-[15rem] w-9/12 mx-auto rounded-xl" />
+  <div className="absolute inset-0 bg-black opacity-20 rounded-xl w-9/12 mx-auto"></div>
+</div>
         {orders?.data?.map((order, index) => (
           <OrderList key={index} order={order} refetch={refetch}></OrderList>
         ))}

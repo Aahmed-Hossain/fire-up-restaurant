@@ -1,13 +1,15 @@
-import { useLoaderData } from "react-router-dom";
-import useAuth from "../../hooks/useAuth";
 import axios from "axios";
-const OrderNow = () => {
-  const food = useLoaderData();
-  // console.log('single food',food);
-  const {image, category,food_id,food_name, food_origin, order_count, quantity,price,made_by} = food;
-    
+import useAuth from "../../hooks/useAuth";
+import { useLoaderData } from "react-router-dom";
+
+
+const Update = () => {
+    const updateFood = useLoaderData()
+    console.log('update single food',updateFood);
+    const {_id, image, category,food_id,food_name, food_origin, order_count, quantity,price,made_by} = updateFood;
     const { user } = useAuth();
-    const handleBookService = e => {
+
+    const handleUpdate = e => {
         e.preventDefault();
         const form = e.target;
         const name = form.name.value;
@@ -15,12 +17,12 @@ const OrderNow = () => {
         const email = user?.email;
         const date = form.date.value;
         const quantity = form.quantity.value;
-        const order = { customerName: name, email, date,price,category,food_origin,order_count,food_id,made_by,quantity,image, food_name}
-        console.log(order);
-        axios.post(`http://localhost:5000/orders`,order)
+        const updateOrder = { customerName: name, email, date,price,category,food_origin,order_count,food_id,made_by,quantity,image, food_name}
+        console.log(updateOrder);
+        axios.put(`http://localhost:5000/orders/${_id}`,updateOrder)
         .then(res=> {console.log(res.data)
-          if(res.data.insertedId){
-            alert('Food Added Successfully')
+          if(res.data.modifiedCount>0){
+            alert('Food updated Successfully')
           }
         })
         .catch(error=> console.log(error));
@@ -31,8 +33,8 @@ const OrderNow = () => {
   <img src={image} className="h-[18rem] w-full rounded-xl" />
   <div className="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
 </div>
-            <h2 className="text-center mt-3  font-bold text-3xl text-[#FF3811]">{food_name}</h2>
-      <form onSubmit={handleBookService}>
+            <h2 className="text-center mt-3  font-bold text-3xl">Update: <span className="text-[#FF3811]">{food_name}</span></h2>
+      <form onSubmit={handleUpdate}>
         <div className="flex gap-4">
         <div className="w-1/2">
         <div className="form-control ">
@@ -58,9 +60,9 @@ const OrderNow = () => {
         <div className="flex justify-between">
         <div className="">
           <label className="label">
-            <span className="label-text">Due Amount</span>
+            <span className="label-text">Price</span>
           </label>
-          <input defaultValue={'$' + price} className="input focus:outline-orange-600" name="price" required readOnly />
+          <input defaultValue={ price} className="input focus:outline-orange-600" name="price" required readOnly />
         </div>
         <div className="">
           <label className="label">
@@ -71,10 +73,10 @@ const OrderNow = () => {
         </div>
         </div>
         </div>
-        <input type="submit" className=" py-2 px-4 w-full rounded text-white font-bold text-lg bg-[#FF3811] my-3" value="Place Order" />
+        <input type="submit" className=" py-2 px-4 w-full rounded text-white font-bold text-lg bg-[#FF3811] my-3" value="Update Your Order" />
       </form>
     </div>
     );
 };
 
-export default OrderNow;
+export default Update;

@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import axios from 'axios';
 import edit from '../../assets/images/edit.jpg'
+import { Link } from 'react-router-dom';
 
 const OrderList = ({ order, refetch }) => {
-  const {_id, image, quantity ,price ,date, food_name } = order;
+  const {_id, image, quantity ,price ,date, food_name, customerName } = order;
 
   const handleDelete = id => {
     const proceed = confirm('are want to proceed?')
@@ -19,8 +20,9 @@ const OrderList = ({ order, refetch }) => {
     }
   }
   return (
-    <div className="w-9/12 mx-auto">
-      <div className="flex items-center justify-between gap-2  py-2 border border-red-200  rounded-xl">
+    <div className="w-9/12 mx-auto ">
+      
+      <div className="flex items-center justify-between gap-2  py-2 border border-slate-200 rounded-xl mb-4">
         {/* left div */}
         <div className='flex items-center gap-3'>
         <button onClick={()=>handleDelete(_id)} className=" btn-circle btn-sm opacity-50 ml-2 hover:opacity-70 bg-black text-white">
@@ -28,18 +30,19 @@ const OrderList = ({ order, refetch }) => {
         </button>
           <img className="w-[15rem] rounded-xl flex border-2 items-start" src={image} alt="" />
         <div>
-          <p>{food_name}</p>
-          <p>Price: {price}</p>
-          <p>Quantity: {quantity}</p>
+          <p className='text-xl font-semibold text-[#FF3811]'>{food_name}</p>
+          <p className='text-[#A2A2A2]'>Customer: {customerName}</p>
+          <p className='text-[#A2A2A2]'>Price: {price}</p>
+          <p className='text-[#A2A2A2]'>Quantity: {quantity}</p>
         </div>
         </div>
         {/* right div */}
-        <div className='flex items-center gap-3'>
+        <div className='flex items-center gap-4 pr-2'>
         <div>
           <p>Date: {date}</p>
         </div>
-        <div><img className='w-[2rem] hover:bg-red-300 border-2' src={edit} alt="" />
-        </div>
+        <Link to={`/update/${_id}`}><img className='w-[2rem] hover: hover:bg-black hover:opacity-70' src={edit} alt="" />
+        </Link >
         </div>
       </div>
     </div>
