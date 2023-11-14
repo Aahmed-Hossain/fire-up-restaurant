@@ -3,14 +3,16 @@ import swal from 'sweetalert';
 import logo from '../assets/images/logo.png'
 import useAuth from '../hooks/useAuth';
 import NavbarLinks from "./NavbarLinks";
-import {  Link, NavLink } from 'react-router-dom';
+import {  Link, NavLink, useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
   const {user,logOut} = useAuth();
-
+const navigateToLogin = useNavigate()
   const handleLogout = () =>{
     logOut()
     .then(swal("Nice!", "You logged out successfully!", "success"))
+    navigateToLogin('/login')
     .catch(err => {swal(err.message)})
   }
   const links = <>
@@ -44,7 +46,9 @@ const Navbar = () => {
       </label>
     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-900 text-white rounded-box w-52 ">
       <li><button className="btn btn-sm  btn-ghost">{user.displayName}</button></li>
-      <li><Link to={'/orders'}><button className="btn btn-sm  btn-ghost">My Orders</button></Link></li>
+      <li> <button className="btn btn-sm  btn-ghost"><Link to={'/orders'}> My Orders</Link></button></li>
+      <li> <button className="btn btn-sm  btn-ghost"><Link to={'/addFoods'}>Add Foods</Link></button></li>
+      <li> <button className="btn btn-sm btn-ghost"><Link to={'/MyAddedFoods'}>My Added Foods</Link></button></li>
       <li><button onClick={handleLogout}  className="btn btn-sm  btn-ghost">Logout</button></li>
     </ul>
   </div>

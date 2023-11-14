@@ -28,7 +28,7 @@ const OrderList = ({ order, refetch }) => {
         <button onClick={()=>handleDelete(_id)} className=" btn-circle btn-sm opacity-50 ml-2 hover:opacity-70 bg-black text-white">
           X
         </button>
-          <img className="w-[15rem] rounded-xl flex border-2 items-start" src={image} alt="" />
+          <img className="w-[15rem] rounded-xl flex items-start" src={image} alt="" />
         <div>
           <p className='text-xl font-semibold text-[#FF3811]'>{food_name}</p>
           <p className='text-[#A2A2A2]'>Customer: {customerName}</p>
