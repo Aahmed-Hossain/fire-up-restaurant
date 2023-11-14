@@ -17,7 +17,7 @@ const FoodDetails = () => {
         {/* left div */}
         <div className="w-4/6 ">
         <h2 className="font-extrabold text-4xl mb-2">{singleFood.food_name}</h2>
-        <p className="text-[#33333380] ">{singleFood.description.making_procedures.slice(0,450)}</p>
+        <p className="text-[#33333380] ">{ singleFood?.description?.making_procedures || singleFood?.description}</p>
         <div className="relative">
   <img className="rounded-xl h-[23rem] w-full" src={singleFood.image} alt="" />
   <span className="absolute top-4 font-bold right-4 bg-black bg-opacity-70 text-white px-4 py-2 rounded">
@@ -30,7 +30,7 @@ const FoodDetails = () => {
         {/* right div */}
         <div className="w-2/6 mx-auto space-y-3">
             <h3 className="text-3xl font-bold mb-2">INGREDIENTS:</h3>
-         <p className="text-[#33333380]">{singleFood.description.ingredients}</p>
+         <p className="text-[#33333380]">{ singleFood?.description?.ingredients || singleFood?.description}</p>
          <h4 className="text-md font-semibold">Mady By: <span className="text-red-500 font-bold text-xl">
          {singleFood.made_by}</span></h4>
          <h5 className="text-md font-semibold"> Originated From: <span className="tex-xl text-[#FF3811]">{singleFood.food_origin}</span></h5>

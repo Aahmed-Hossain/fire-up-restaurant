@@ -13,6 +13,7 @@ import Orders from "../components/Orders/Orders";
 import Update from "../components/Update/Update";
 import AddFood from "../components/AddFood/AddFood";
 import MyAddedFoods from "../components/MyAddedFoods/MyAddedFoods";
+import UpdateAddedFood from "../components/UpdateAddedFood/UpdateAddedFood";
 
 
 const routes = createBrowserRouter([
@@ -72,7 +73,12 @@ const routes = createBrowserRouter([
             {
                 path: '/MyAddedFoods',
                 element: <MyAddedFoods></MyAddedFoods>
-            }
+            },
+            {
+                path: '/updateAddedFood/:id',
+                element: <UpdateAddedFood></UpdateAddedFood>,
+                loader: ({params})=> fetch(`http://localhost:5000/allFoods/${params.id}`)
+            },
             
         ]
     }

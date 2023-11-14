@@ -2,13 +2,16 @@
 import banner1 from "../../assets/images/banner1.jpg";
 import { useState } from "react";
 import useAxios from './../../hooks/useAxios';
+import useAuth from "../../hooks/useAuth";
 const AddFood = () => {
   const categories = ["Burger","Pizza","Steak","French Fries","Wings","Dessert"];
   const [selectedCategory, setSelectedCategory] = useState("");
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
   };
-//   const { user } = useAuth();
+  const { user } = useAuth();
+  const name = user?.displayName;
+  const email = user?.email;
 const axiosHook = useAxios();
 
   const handleAddFood = (e) => {
@@ -18,15 +21,21 @@ const axiosHook = useAxios();
         const image = form.image.value;
         const food_name = form.food_name.value;
         const price = form.price.value;
+        const date = form.date.value;
         const made_by = form.made_by.value;
         const food_origin = form.food_origin.value;
         const quantity = form.quantity.value;
         const description = form.description.value;
 
-        const addFood = {category,image, food_name, price, made_by,food_origin, quantity, description}
+        const addFood = {category,image, food_name, price, date, made_by,food_origin, quantity, description, email, name}
         console.log(addFood);
         axiosHook.post('/allFoods',addFood)
-        .then(res =>console.log(res.data))
+        .then(res =>{
+          console.log(res.data)
+          if(res.data.insertedId){
+            alert('Added')
+          }
+        })
 
   };
   return (
