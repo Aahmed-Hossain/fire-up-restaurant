@@ -1,4 +1,11 @@
+
+import useAxios from "../../hooks/useAxios";
+
 const Blogs = () => {
+    const hoookAxios = useAxios();
+    hoookAxios.get('/blogs').then(res=>{
+        console.log(res.data);
+    });
     return (
         <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-3">
             <div>
@@ -20,13 +27,7 @@ const Blogs = () => {
                 </h1>
 
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores
-                    praesentium, alias nam? Tempore............lorem
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos consequatur, odio, voluptas possimus, ea quasi quam doloribus praesentium sapiente qui ad ut fugit? Repellat, voluptatem nostrum! Corrupti nam dicta dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorum neque! Tenetur voluptate animi, temporibus amet qui laudantium. Commodi quidem sint eius consequuntur asperiores voluptate corporis nulla obcaecati culpa velit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit nulla totam numquam reprehenderit quidem, veritatis ipsa perferendis autem itaque consequatur rerum, dolore praesentium nostrum animi expedita id repellendus dolorem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugit dolorum amet dolores
-                    praesentium, alias nam? Tempore............lorem
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos consequatur, odio, voluptas possimus, ea quasi quam doloribus praesentium sapiente qui ad ut fugit? Repellat, voluptatem nostrum! Corrupti nam dicta dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorum neque! Tenetur voluptate animi, temporibus amet qui laudantium. Commodi quidem sint eius consequuntur asperiores voluptate corporis nulla obcaecati culpa velit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum velit nulla totam numquam reprehenderit quidem, veritatis ipsa perferendis autem itaque consequatur rerum, dolore praesentium nostrum animi expedita id repellendus dolorem!
+                    Lorem ipsum dolor si
                 </p>
 
                 <a href="#" className="inline-block mt-4 text-blue-500 underline hover:text-blue-400">Read more</a>

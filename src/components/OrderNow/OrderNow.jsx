@@ -1,17 +1,23 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import axios from "axios";
 const OrderNow = () => {
   const food = useLoaderData();
+  const navigate = useNavigate();
   // console.log('single food',food);
-  const {_id,image, category,food_id,food_name, food_origin, order_count, quantity,price,made_by} = food;
-    
+  const {_id,image, category,food_id,food_name, food_origin, order_count, quantity,price,made_by} = food || {};
     const { user } = useAuth();
     const handleBookService = e => {
         e.preventDefault();
         const form = e.target;
+        // console.log({quantity, form});
+        console.log(food?.quantity);
+        if(food?.quantity < form.quantity.value){
+          alert('quantity not available');
+          return;
+        }
         const name = form.name.value;
-        const price = form.price.value;
+        const price = (form.price.value);
         const email = user?.email;
         const date = form.date.value;
         const quantity = form.quantity.value;
@@ -23,8 +29,8 @@ const OrderNow = () => {
             alert('Food Added Successfully')
           }
           form.reset();
+          navigate('/orders')
         })
-        
         .catch(error=> console.log(error));
     }
     return (
@@ -70,7 +76,7 @@ const OrderNow = () => {
           <label className="label">
             <span className="label-text">Price</span>
           </label>
-          <input defaultValue={'$' + price} className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500" name="price" required readOnly />
+          <input defaultValue={'$' + price.toString().replace(/^\$/, '')} className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500" name="price" required readOnly />
         </div>
         <div className="">
           <label className="label">

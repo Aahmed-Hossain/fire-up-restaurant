@@ -29,7 +29,6 @@ const AllFood = () => {
       handleSearch();
     }
   };
-  console.log("set category", category);
   const categories = [
     "burger",
     "pizza",
