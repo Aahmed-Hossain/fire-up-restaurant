@@ -8,24 +8,26 @@ const AllFood = () => {
   const [price, setPrice] = useState("");
   const [page, setPage] = useState(1);
   const [category, setCategory] = useState("");
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const handleSearch = async () => {
     try {
-          const response = await fetch(`http://localhost:5000/allFood/${encodeURIComponent(searchTerm)}`);
-          const data = await response.json();
-          setSearchResults(data);
-          console.log('serch',searchResults);
+      const response = await fetch(
+        `http://localhost:5000/allFood/${encodeURIComponent(searchTerm)}`
+      );
+      const data = await response.json();
+      setSearchResults(data);
+      // console.log('serch',searchResults);
     } catch (error) {
-          console.error('Error fetching data:', error);
+      console.error("Error fetching data:", error);
     }
-};
+  };
 
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-          handleSearch();
+    if (e.key === "Enter") {
+      handleSearch();
     }
-}
+  };
   console.log("set category", category);
   const categories = [
     "burger",
@@ -80,70 +82,71 @@ const AllFood = () => {
         </div>
         {/* serch option */}
         <input
-                  className='px-4 py-2'
-                        type="text"
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                        onKeyPress={handleKeyPress} // Call handleSearch when Enter key is pressed
-                        placeholder="Enter college name"
-                  />
-                  <button className='btn btn-outline border-b-4 ms-4' onClick={handleSearch}>Search</button>
-        
+          className="px-4 py-2"
+          type="text"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyPress={handleKeyPress} // Call handleSearch when Enter key is pressed
+          placeholder="Enter college name"
+        />
+        <button
+          className="btn btn-outline border-b-4 ms-4"
+          onClick={handleSearch}
+        >
+          Search
+        </button>
 
         {/* sorting div right side */}
         <div className="flex justify-center gap-2">
           {/*  sorting  by price */}
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text text-orange-600 font-semibold">
-              Sort By Price
-            </span>
-          </label>
-          <select
-            className="input input-bordered  outline outline-orange-600"
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-          >
-            <option value="asc">Low to High</option>
-            <option value="dsc"> High To Low</option>
-          </select>
-        </div>
-        {/* sorting by category */}
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text text-orange-600 font-semibold">
-              Select Category
-            </span>
-          </label>
-          <select
-            name="category"
-            value={category}
-            className="input input-bordered  outline outline-orange-600"
-            onChange={(e) => setCategory(e.target.value)}
-          >
-            <option value="">Select</option>
-            {categories.map((category, index) => (
-              <option key={index} value={category}>
-                {category}
-              </option>
-            ))}
-          </select>
-        </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text text-orange-600 font-semibold">
+                Sort By Price
+              </span>
+            </label>
+            <select
+              className="input input-bordered  outline outline-orange-600"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+            >
+              <option value="asc">Low to High</option>
+              <option value="dsc"> High To Low</option>
+            </select>
+          </div>
+          {/* sorting by category */}
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text text-orange-600 font-semibold">
+                Select Category
+              </span>
+            </label>
+            <select
+              name="category"
+              value={category}
+              className="input input-bordered  outline outline-orange-600"
+              onChange={(e) => setCategory(e.target.value)}
+            >
+              <option value="">Select</option>
+              {categories.map((category, index) => (
+                <option key={index} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
 
       {/* all foods below */}
       <div className="grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
-      {
-  searchResults.length === 0
-    ? foods?.data?.result?.map((food, index) => (
-        <FoodCard key={index} food={food}></FoodCard>
-      ))
-    : searchResults.map((food, index) => (
-        <FoodCard key={index} food={food}></FoodCard>
-      ))
-}
-
+        {searchResults.length === 0
+          ? foods?.data?.result?.map((food, index) => (
+              <FoodCard key={index} food={food}></FoodCard>
+            ))
+          : searchResults.map((food, index) => (
+              <FoodCard key={index} food={food}></FoodCard>
+            ))}
       </div>
       <div className="join flex justify-center my-12">
         <button onClick={handlePrev} className="join-item btn">

@@ -36,7 +36,7 @@ const TopFood = () => {
       </p>
       <div className="grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6">
         {
-        foods?.data?.result?.slice(0, 9).map((food, index) => (
+        foods?.data?.result?.map((food, index) => (
             <FoodCard 
             key={index}
             food={food}
