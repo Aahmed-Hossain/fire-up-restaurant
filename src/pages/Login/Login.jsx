@@ -55,7 +55,7 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" name='password' placeholder="password" className="border-b border-[#dc2626] w-full py-3 px-3 focus:outline-none bg-transparent" />
+                                <input type="password" name='password' placeholder="password" className="border-b border-[#dc2626] w-full py-3 px-3 focus:outline-none bg-transparent" />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>

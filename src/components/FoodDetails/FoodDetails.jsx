@@ -12,7 +12,7 @@ const FoodDetails = () => {
         return <Loading></Loading>
     }
   return (
-    <div>
+    <div className="mb-8">
         <h2 className="font-extrabold text-center uppercase text-[#FF3811] my-4 text-4xl">{singleFood.category}</h2>
       <div className=" flex gap-4">
         {/* left div */}

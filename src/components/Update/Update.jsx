@@ -24,6 +24,7 @@ const Update = () => {
           if(res.data.modifiedCount>0){
             alert('Food updated Successfully')
           }
+          form.reset();
         })
         .catch(error=> console.log(error));
     }
@@ -41,13 +42,13 @@ const Update = () => {
           <label className="label">
             <span className="label-text">Name</span>
           </label>
-          <input type="text" defaultValue={user?.displayName} placeholder="Your Name" name="name" className="input focus:outline-orange-600" required  />
+          <input type="text" defaultValue={user?.displayName} placeholder="Your Name" name="name" className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500" required  />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
           </label>
-          <input type="email" name="email" placeholder="email" className="input focus:outline-orange-600" defaultValue={user?.email} required readOnly/>
+          <input type="email" name="email" placeholder="email" className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500" defaultValue={user?.email} required readOnly/>
         </div>
         </div>
         <div className="w-1/2">
@@ -55,20 +56,20 @@ const Update = () => {
           <label className="label">
             <span className="label-text">Date</span>
           </label>
-          <input name="date" type="date" className="input focus:outline-orange-600" required />
+          <input name="date" type="date" className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500" required />
         </div>
         <div className="flex justify-between">
         <div className="">
           <label className="label">
             <span className="label-text">Price</span>
           </label>
-          <input defaultValue={ price} className="input focus:outline-orange-600" name="price" required readOnly />
+          <input defaultValue={ price} className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500" name="price" required readOnly />
         </div>
         <div className="">
           <label className="label">
             <span className="label-text">Set Quantiy</span>
           </label>
-          <input name="quantity" placeholder={'Available Quantity: '+ quantity} className="input focus:outline-orange-600" required  />
+          <input name="quantity" placeholder={'Available Quantity: '+ quantity} className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500" required  />
         </div>
         </div>
         </div>

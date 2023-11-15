@@ -9,10 +9,11 @@ import ReviewCard4 from './ReviewCard4';
 const Testimony = () => {
     return (
 
-<div className='my-[6rem]'>
+<div className=''>
 <h1 className="text-center text-4xl font-bold my-2">Our Happy Clients</h1>
-<h1 className="text-center text-[#dc2626]">We Care About Our Customer</h1>
-<h1 className="text-center text-[#737373]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</h1>
+<h1 className="text-[#FF3811] text-xl font-semibold mt-2 text-center">We Care About Our Pricious Customers & Supporters</h1>
+<h1 className="text-sm  dark:text-gray-200 text-center my-3">Skilled chef crafting exquisite dishes, blending flavors for a delightful.Delicious cuisine, prompt service, <br />
+inviting ambiance our commitment to your dining satisfaction.</h1>
 
 <Swiper
   spaceBetween={40}

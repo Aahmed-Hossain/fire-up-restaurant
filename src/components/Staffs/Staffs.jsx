@@ -5,10 +5,11 @@ import Staff4 from "./Staff4";
 
 const Staffs = () => {
     return (
-    <div className='my-[4rem] '>
+    <div className='my-2'>
         <h1 className='text-4xl font-bold text-center'>Meet Our Chef</h1>
-        <h1 className='text-[#dc2626] text-center'>Experienced Team</h1>
-        <p className='text-sm text-center my-2 text-zinc-500'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+        <h1 className='text-[#dc2626] text-xl font-semibold text-center'>Experienced Team</h1>
+        <p className='text-sm  dark:text-gray-200 text-center my-3'>Skilled chef crafting exquisite dishes, blending flavors for a delightful.Delicious cuisine, prompt service,<br />
+inviting ambiance our commitment to your dining satisfaction.</p>
         <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-6 my-8'>
         <Staff1></Staff1>
         <Staff2></Staff2>

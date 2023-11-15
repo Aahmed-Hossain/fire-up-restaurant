@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaMapMarkerAlt ,FaMailBulk} from 'react-icons/fa';
 import logo from '../../assets/images/logo.png';
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-gray-100 mb-4 text-base-content">
+         <footer className="footer p-6 bg-gray-100 mb-4 text-base-content">
             <div>
                 <Link to={'/'}>
                 <img className='w-[6rem] flex items-center justify-center' src={logo} alt="" /></Link>
@@ -39,6 +39,8 @@ const Footer = () => {
         </div>
       </nav> 
         </footer>
+       
+      
     );
 };
 
