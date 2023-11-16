@@ -1,6 +1,7 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import axios from "axios";
+import swal from "sweetalert";
 const OrderNow = () => {
   const food = useLoaderData();
   const navigate = useNavigate();
@@ -10,10 +11,8 @@ const OrderNow = () => {
     const handleBookService = e => {
         e.preventDefault();
         const form = e.target;
-        // console.log({quantity, form});
-        console.log(food?.quantity);
         if(food?.quantity < form.quantity.value){
-          alert('quantity not available');
+          swal("Oppss!", "Please set available Quantity!", "warning");
           return;
         }
         const name = form.name.value;
@@ -21,12 +20,11 @@ const OrderNow = () => {
         const email = user?.email;
         const date = form.date.value;
         const quantity = form.quantity.value;
-        const order = { customerName: name, email, date,price,category,food_origin,order_count,food_id,made_by,quantity,image, food_name,_id}
-        console.log(order);
+        const order = { customerName: name, email, date,price,category,food_origin,order_count,food_id,made_by,quantity,image, food_name,_id};
         axios.post(`http://localhost:5000/orders`,order)
         .then(res=> {console.log(res.data)
           if(res.data.insertedId){
-            alert('Food Added Successfully')
+            swal("Great!", "Your order placed successfully!", "success");
           }
           form.reset();
           navigate('/orders')

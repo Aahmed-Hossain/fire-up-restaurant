@@ -2,22 +2,50 @@
 import axios from 'axios';
 import edit from '../../assets/images/edit.jpg'
 import { Link } from 'react-router-dom';
+import swal from 'sweetalert';
 
 const OrderList = ({ order, refetch }) => {
   const {_id, image, quantity ,price ,date, food_name, customerName } = order;
 
   const handleDelete = id => {
-    const proceed = confirm('are want to proceed?')
-    if(proceed){
+
+
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this.!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        swal("Yes! Your Food has been deleted!", {
+          icon: "success",
+        });
         axios.delete(`http://localhost:5000/orders/${id}`)
         .then(res => {
             console.log(res.data);
             if(res.data.deleteCount){
-                alert('deleted succesfully')
+                alert('Deleted succesfully')
             }
             refetch();
         })
-    }
+      } else {
+        swal("Your Food not deleted!");
+      }
+    });
+
+    // const proceed = confirm('are want to proceed?')
+    // if(proceed){
+    //     axios.delete(`http://localhost:5000/orders/${id}`)
+    //     .then(res => {
+    //         console.log(res.data);
+    //         if(res.data.deleteCount){
+    //             alert('deleted succesfully')
+    //         }
+    //         refetch();
+    //     })
+    // }
   }
   return (
     <div className="w-9/12 mx-auto ">

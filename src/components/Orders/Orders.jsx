@@ -27,6 +27,8 @@ const Orders = () => {
   }
     return (
         <div className="space-y-3">
+          <h1 className=" font-bold text-4xl text-center text-orange-500">Your Order List
+      </h1>
           <div className="relative h-[15rem]">
   <img src={banner1} className="h-[15rem] w-9/12 mx-auto rounded-xl" />
   <div className="absolute inset-0 bg-black opacity-20 rounded-xl w-9/12 mx-auto"></div>

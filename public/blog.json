@@ -21,11 +21,21 @@
       "blog_id": 3,
       "title": "Different Between Mongodb Database vs mySQL Database?",
       "description": "MongoDB and MySQL differ in their data models, with MongoDB being NoSQL and using BSON format for flexible schemas, while MySQL is a relational database with a structured schema. MongoDB is schema-less, allowing dynamic changes to document structures, while MySQL has a fixed schema. MongoDB uses a JSON-like query language, while MySQL uses SQL. MongoDB is designed for horizontal scalability, suitable for large and evolving datasets, whereas MySQL traditionally relies on vertical scaling. MongoDB is chosen for flexible schemas and unstructured data, while MySQL is common for applications with well-defined schemas and ACID transactions. MongoDB is considered simpler for setup, while MySQL may require more configuration, especially for complex relationships. The choice depends on specific application requirements and preferences.",
-      "image": "https://i.ibb.co/zHdT4v0/staff-2-jpg.webp",
+      "image": "https://i.ibb.co/z4YJtMs/blog3.jpg",
       "author": "Alex Johnson",
-      "author_img": "https://i.ibb.co/JtqVPF2/st2.jpg",
+      "author_img": "https://i.ibb.co/zHdT4v0/staff-2-jpg.webp",
       "author_profession": "Web Developer"
+    },
+    {
+      "blog_id": 4,
+      "title": "What is One Way Data Binding?",
+      "description": "One-way data binding is a programming concept where the data source (model) is bound to the user interface (view) in such a way that changes in the model automatically update the view, but changes in the view do not affect the model directly. It ensures a unidirectional flow of data from the model to the view, simplifying the application's architecture and reducing the risk of unintended side effects.Model to View Flow: Changes in the underlying data (model) automatically reflect in the corresponding views. If the model is updated, the view updates accordingly. This synchronization is typically handled by the framework or library.",
+      "image": "https://i.ibb.co/XCpysb4/blog1.jpg",
+      "author": "John Doe",
+      "author_img": "https://i.ibb.co/JBSLy9h/st1.jpg",
+      "author_profession": "UI/UX Designer"
     }
+
   ]
   
 

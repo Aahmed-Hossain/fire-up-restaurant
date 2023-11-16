@@ -5,7 +5,7 @@ import useAxios from '../../hooks/useAxios';
 
 const AddedFoodList = ({addedFood,refetch}) => {
     console.log(addedFood);
-    const {_id, image, quantity ,price ,date, food_name, email,name } = addedFood;
+    const {_id, image, quantity ,price ,date, food_name, email,customerName } = addedFood;
 const axiosHook = useAxios();
     const handleDelete = id => {
       const proceed = confirm('are want to proceed?')
@@ -22,7 +22,6 @@ const axiosHook = useAxios();
     }
     return (
         <div className="w-9/12 mx-auto ">
-      
       <div className="flex items-center justify-between gap-2  py-2 border border-slate-200 rounded-xl mb-4">
         {/* left div */}
         <div className='flex items-center gap-3'>
@@ -33,7 +32,7 @@ const axiosHook = useAxios();
         <div>
           <p className='text-xl font-semibold text-[#FF3811]'>{food_name}</p>
           <p className='text-[#A2A2A2]'>Email: {email}</p>
-          <p className='text-[#A2A2A2]'>Name: {name}</p>
+          <p className='text-[#A2A2A2]'>Name: {customerName}</p>
           <p className='text-[#A2A2A2]'>Price: {price}</p>
           <p className='text-[#A2A2A2]'>Quantity: {quantity}</p>
         </div>

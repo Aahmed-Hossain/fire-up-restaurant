@@ -14,6 +14,7 @@ import Update from "../components/Update/Update";
 import AddFood from "../components/AddFood/AddFood";
 import MyAddedFoods from "../components/MyAddedFoods/MyAddedFoods";
 import UpdateAddedFood from "../components/UpdateAddedFood/UpdateAddedFood";
+import PrivateRoute from "./PrivateRoute";
 
 
 const routes = createBrowserRouter([
@@ -40,7 +41,8 @@ const routes = createBrowserRouter([
             },
             {
                 path: 'blogs',
-                element:<Blogs></Blogs>
+                element:<Blogs></Blogs>,
+                loader: ()=> fetch(`http://localhost:5000/blogs`)
             },
             {
                 path: '/foodDetails/:id',
@@ -54,7 +56,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/orderNow/:id',
-                element: <OrderNow></OrderNow>,
+                element: <PrivateRoute><OrderNow></OrderNow></PrivateRoute>,
                 loader: ({params})=> fetch(`http://localhost:5000/allFoods/${params.id}`)
             },
             {

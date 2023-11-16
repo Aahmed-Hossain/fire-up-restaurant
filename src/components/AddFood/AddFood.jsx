@@ -2,6 +2,7 @@ import banner1 from "../../assets/images/banner1.jpg";
 import { useState } from "react";
 import useAxios from "./../../hooks/useAxios";
 import useAuth from "../../hooks/useAuth";
+import swal from "sweetalert";
 const AddFood = () => {
   const categories = [
     "Burger",
@@ -46,11 +47,10 @@ const AddFood = () => {
       email,
       name,
     };
-    console.log(addFood);
     axiosHook.post("/allFoods", addFood).then((res) => {
       console.log(res.data);
       if (res.data.insertedId) {
-        alert("Added");
+        swal("Great!","Your food added successfully!", "success");
       }
       form.reset();
     });
