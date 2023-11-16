@@ -2,6 +2,7 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import axios from "axios";
 import swal from "sweetalert";
+import PageTitle from "../PageTitle/PageTitle";
 const OrderNow = () => {
   const food = useLoaderData();
   const navigate = useNavigate();
@@ -33,6 +34,7 @@ const OrderNow = () => {
     }
     return (
         <div className=" bg-base-00">
+          <PageTitle title={'Order Now'}></PageTitle>
           <div className="relative h-[18rem]">
   <img src={image} className="h-[18rem] w-full rounded-xl" />
   <div className="absolute inset-0 bg-black opacity-40 rounded-xl"></div>

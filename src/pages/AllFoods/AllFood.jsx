@@ -3,6 +3,7 @@ import Loading from "../../components/Loading";
 import useAxios from "../../hooks/useAxios";
 import FoodCard from "../../components/TopFood/FoodCard";
 import { useState } from "react";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 const AllFood = () => {
   const [price, setPrice] = useState("");
@@ -74,6 +75,7 @@ const AllFood = () => {
   };
   return (
     <div className="my-6">
+      <PageTitle title={'All Foods'}></PageTitle>
       <div className="flex items-center justify-between gap-8 bg-opacity-90  py-2 px-2 border-2 border-orange-600 rounded-xl mb-4">
         <div>
           <h1 className="text-3xl font-bold text-orange-500">

@@ -1,5 +1,6 @@
 import { Link, useLoaderData, useNavigation,  } from "react-router-dom";
 import Loading from "../Loading";
+import PageTitle from "../PageTitle/PageTitle";
 
 
 const FoodDetails = () => {
@@ -13,6 +14,7 @@ const FoodDetails = () => {
     }
   return (
     <div className="mb-8">
+      <PageTitle title={'Food Details'}></PageTitle>
         <h2 className="font-extrabold text-center uppercase text-[#FF3811] my-4 text-4xl">{singleFood.category}</h2>
       <div className=" flex gap-4">
         {/* left div */}

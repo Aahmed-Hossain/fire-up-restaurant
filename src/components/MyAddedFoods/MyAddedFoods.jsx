@@ -4,6 +4,7 @@ import useAxios from "../../hooks/useAxios";
 import Loading from "../Loading";
 import banner1 from "../../assets/images/banner1.jpg"
 import AddedFoodList from "./AddedFoodList";
+import PageTitle from "../PageTitle/PageTitle";
 
 const MyAddedFoods = () => {
     const {user} = useAuth() 
@@ -37,6 +38,7 @@ const MyAddedFoods = () => {
         {addedFoods?.data?.result?.map((addedFood, index) => (
           <AddedFoodList key={index} addedFood={addedFood} refetch={refetch}></AddedFoodList>
         ))}
+        <PageTitle title={'Your Added Foods'}></PageTitle>
       </div>
     );
 };

@@ -2,23 +2,36 @@
 import { Link } from 'react-router-dom';
 import edit from '../../assets/images/edit.jpg'
 import useAxios from '../../hooks/useAxios';
+import swal from 'sweetalert';
 
 const AddedFoodList = ({addedFood,refetch}) => {
-    console.log(addedFood);
     const {_id, image, quantity ,price ,date, food_name, email,customerName } = addedFood;
 const axiosHook = useAxios();
     const handleDelete = id => {
-      const proceed = confirm('are want to proceed?')
-      if(proceed){
-        axiosHook.delete(`/allFoods/${id}`)
+      swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will not be able to recover this.!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          swal("Yes! Your Food has been deleted!", {
+            icon: "success",
+          });
+          axiosHook.delete(`/allFoods/${id}`)
           .then(res => {
-              console.log(res.data);
-              if(res.data.deleteCount){
-                  alert('deleted succesfully')
-              }
-              refetch();
-          })
-      }
+            console.log(res.data);
+            if(res.data.deleteCount){
+                alert('deleted succesfully')
+            }
+            refetch();
+        })
+        } else {
+          swal("Your Food not deleted!");
+        }
+      });
     }
     return (
         <div className="w-9/12 mx-auto ">

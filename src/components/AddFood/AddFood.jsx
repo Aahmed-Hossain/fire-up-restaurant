@@ -3,7 +3,10 @@ import { useState } from "react";
 import useAxios from "./../../hooks/useAxios";
 import useAuth from "../../hooks/useAuth";
 import swal from "sweetalert";
+import PageTitle from "../PageTitle/PageTitle";
+import { useNavigate } from "react-router-dom";
 const AddFood = () => {
+  const navigate = useNavigate()
   const categories = [
     "Burger",
     "Pizza",
@@ -53,6 +56,7 @@ const AddFood = () => {
         swal("Great!","Your food added successfully!", "success");
       }
       form.reset();
+      navigate('/MyAddedFoods')
     });
   };
   return (
@@ -199,6 +203,7 @@ const AddFood = () => {
           value="Add Your Food"
         />
       </form>
+      <PageTitle title={'Add Foods'}></PageTitle>
     </div>
   );
 };

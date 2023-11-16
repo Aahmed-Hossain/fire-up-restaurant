@@ -7,6 +7,7 @@ import img from "../../assets/lottie/singing-contract.json";
 import swal from "sweetalert";
 import Lottie from "lottie-react";
 import useAuth from "../../hooks/useAuth";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 const Login = () => {
   const { googleLogin, githubLogin, logIn } = useAuth();
@@ -40,6 +41,7 @@ const Login = () => {
   };
   return (
     <div className="hero min-h-screen">
+      <PageTitle title={'Login Page'}></PageTitle>
       <div className="hero-content flex-col lg:flex-row">
         <div className="w-1/2 mr-12 ">
           <Lottie animationData={img}></Lottie>

@@ -9,7 +9,6 @@ const OrderList = ({ order, refetch }) => {
 
   const handleDelete = id => {
 
-
     swal({
       title: "Are you sure?",
       text: "Once deleted, you will not be able to recover this.!",
@@ -34,18 +33,6 @@ const OrderList = ({ order, refetch }) => {
         swal("Your Food not deleted!");
       }
     });
-
-    // const proceed = confirm('are want to proceed?')
-    // if(proceed){
-    //     axios.delete(`http://localhost:5000/orders/${id}`)
-    //     .then(res => {
-    //         console.log(res.data);
-    //         if(res.data.deleteCount){
-    //             alert('deleted succesfully')
-    //         }
-    //         refetch();
-    //     })
-    // }
   }
   return (
     <div className="w-9/12 mx-auto ">

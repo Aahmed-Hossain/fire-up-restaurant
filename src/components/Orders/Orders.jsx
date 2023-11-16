@@ -4,6 +4,7 @@ import useAxios from "../../hooks/useAxios";
 import useAuth from "../../hooks/useAuth";
 import OrderList from "./OrderList";
 import banner1 from '../../assets/images/banner1.jpg'
+import PageTitle from "../PageTitle/PageTitle";
 const Orders = () => {
     const {user} = useAuth() 
     const hookAxios = useAxios();
@@ -27,6 +28,7 @@ const Orders = () => {
   }
     return (
         <div className="space-y-3">
+          <PageTitle title={'Order Lists'}></PageTitle>
           <h1 className=" font-bold text-4xl text-center text-orange-500">Your Order List
       </h1>
           <div className="relative h-[15rem]">

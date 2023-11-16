@@ -2,6 +2,7 @@ import axios from "axios";
 import useAuth from "../../hooks/useAuth";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
+import PageTitle from "../PageTitle/PageTitle";
 
 const Update = () => {
   const updateFood = useLoaderData();
@@ -61,6 +62,7 @@ const Update = () => {
   };
   return (
     <div className=" p-4 bg-base-200">
+      <PageTitle title={'Update Order'}></PageTitle>
       <div className="relative h-[18rem]">
         <img src={image} className="h-[18rem] w-full rounded-xl" />
         <div className="absolute inset-0 bg-black opacity-40 rounded-xl"></div>

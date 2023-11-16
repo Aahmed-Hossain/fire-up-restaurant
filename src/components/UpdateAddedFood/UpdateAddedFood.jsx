@@ -1,9 +1,12 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useAxios from "../../hooks/useAxios";
 import { useState } from "react";
+import swal from "sweetalert";
+import PageTitle from "../PageTitle/PageTitle";
 
 const UpdateAddedFood = () => {
+  const navigate = useNavigate();
   const categories = [
     "Burger",
     "Pizza",
@@ -21,7 +24,6 @@ const UpdateAddedFood = () => {
   const email = user?.email;
   const axiosHook = useAxios();
   const updateAddedFood = useLoaderData();
-  console.log("update added  single food", updateAddedFood);
   const {
     _id,
     image,
@@ -67,8 +69,10 @@ const UpdateAddedFood = () => {
       .then((res) => {
         console.log(res.data);
         if (res.data.modifiedCount > 0) {
-          alert("Food updated Successfully");
-        } form.reset();
+          swal("WoW!", "Your Food Updated Successfully.", "success");
+        }
+        form.reset();
+        navigate("/MyAddedFoods");
       })
       .catch((error) => console.log(error));
   };
@@ -228,6 +232,7 @@ const UpdateAddedFood = () => {
           value="Add Your Food"
         />
       </form>
+      <PageTitle title={'Update Added Food'}></PageTitle>
     </div>
   );
 };

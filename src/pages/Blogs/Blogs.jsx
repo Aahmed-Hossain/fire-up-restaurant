@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
+import PageTitle from "../../components/PageTitle/PageTitle";
 
 const Blogs = () => {
   const blogs = useLoaderData();
@@ -73,6 +74,7 @@ const Blogs = () => {
           </p>
         </div>
       ))}
+      <PageTitle title={'Blogs'}></PageTitle>
     </div>
   );
 };
