@@ -21,7 +21,7 @@ const OrderList = ({ order, refetch }) => {
         swal("Yes! Your Food has been deleted!", {
           icon: "success",
         });
-        axios.delete(`http://localhost:5000/orders/${id}`)
+        axios.delete(`https://fire-up-restaurant-server.vercel.app/orders/${id}`)
         .then(res => {
             console.log(res.data);
             if(res.data.deleteCount){

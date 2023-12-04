@@ -14,7 +14,7 @@ const AllFood = () => {
   const handleSearch = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/allFood/${encodeURIComponent(searchTerm)}`
+        `https://fire-up-restaurant-server.vercel.app/allFood/${encodeURIComponent(searchTerm)}`
       );
       const data = await response.json();
       setSearchResults(data);
@@ -24,7 +24,6 @@ const AllFood = () => {
       console.error("Error fetching data:", error);
     }
   };
-
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       handleSearch();

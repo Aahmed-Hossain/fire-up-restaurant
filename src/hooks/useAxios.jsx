@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: `http://localhost:5000`,
+    baseURL: `https://fire-up-restaurant-server.vercel.app`,
     withCredentials: true
 })
 const useAxios = () => {

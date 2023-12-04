@@ -42,22 +42,22 @@ const routes = createBrowserRouter([
             {
                 path: 'blogs',
                 element:<Blogs></Blogs>,
-                loader: ()=> fetch(`http://localhost:5000/blogs`)
+                loader: ()=> fetch(`https://fire-up-restaurant-server.vercel.app/blogs`)
             },
             {
                 path: '/foodDetails/:id',
                 element: <FoodDetails></FoodDetails>,
-                loader: ({params})=> fetch(`http://localhost:5000/allFoods/${params.id}`)
+                loader: ({params})=> fetch(`https://fire-up-restaurant-server.vercel.app/allFoods/${params.id}`)
             },
             {
                 path: 'allFoods/foodDetails/:id',
                 element: <FoodDetails></FoodDetails>,
-                loader: ({params})=> fetch(`http://localhost:5000/allFoods/${params.id}`)
+                loader: ({params})=> fetch(`https://fire-up-restaurant-server.vercel.app/allFoods/${params.id}`)
             },
             {
                 path: '/orderNow/:id',
                 element: <PrivateRoute><OrderNow></OrderNow></PrivateRoute>,
-                loader: ({params})=> fetch(`http://localhost:5000/allFoods/${params.id}`)
+                loader: ({params})=> fetch(`https://fire-up-restaurant-server.vercel.app/allFoods/${params.id}`)
             },
             {
                 path: '/orders',
@@ -66,7 +66,7 @@ const routes = createBrowserRouter([
             {
                 path: '/update/:id',
                 element: <Update></Update>,
-                loader: ({params})=> fetch(`http://localhost:5000/orders/${params.id}`)
+                loader: ({params})=> fetch(`https://fire-up-restaurant-server.vercel.app/orders/${params.id}`)
             },
             {
                 path: '/addFoods',
@@ -79,7 +79,7 @@ const routes = createBrowserRouter([
             {
                 path: '/updateAddedFood/:id',
                 element: <UpdateAddedFood></UpdateAddedFood>,
-                loader: ({params})=> fetch(`http://localhost:5000/allFoods/${params.id}`)
+                loader: ({params})=> fetch(`https://fire-up-restaurant-server.vercel.app/allFoods/${params.id}`)
             },
             
         ]

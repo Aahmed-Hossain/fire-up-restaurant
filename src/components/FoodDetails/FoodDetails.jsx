@@ -2,9 +2,7 @@ import { Link, useLoaderData, useNavigation,  } from "react-router-dom";
 import Loading from "../Loading";
 import PageTitle from "../PageTitle/PageTitle";
 
-
 const FoodDetails = () => {
-    
   const singleFood = useLoaderData();
   console.log(singleFood);
   const navigation = useNavigation();

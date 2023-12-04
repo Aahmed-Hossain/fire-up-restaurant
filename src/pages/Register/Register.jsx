@@ -11,7 +11,6 @@ const Register = () => {
   const navigate = useNavigate();
   const { googleLogin, githubLogin, createUser, handleUpdateProfile } =
     useAuth();
-
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);

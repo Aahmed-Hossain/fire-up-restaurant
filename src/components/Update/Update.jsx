@@ -49,7 +49,7 @@ const Update = () => {
     };
     console.log(updateOrder);
     axios
-      .put(`http://localhost:5000/orders/${_id}`, updateOrder)
+      .put(`https://fire-up-restaurant-server.vercel.app/orders/${_id}`, updateOrder)
       .then((res) => {
         console.log(res.data);
         if (res.data.modifiedCount > 0) {

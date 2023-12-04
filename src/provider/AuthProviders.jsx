@@ -46,10 +46,10 @@ const handleUpdateProfile = (name, img) => {
             setUser(currentUser);
             setLoading(false);
             if(currentUser){
-                axios.post('http://localhost:5000/jwt',lodggedUser, {withCredentials:true}).then(res => {console.log("token response" ,res.data);})
+                axios.post('https://fire-up-restaurant-server.vercel.app/jwt',lodggedUser, {withCredentials:true}).then(res => {console.log("token response" ,res.data);})
             }
             else{
-                axios.post(`http://localhost:5000/logout`,userEmail,{withCredentials:true}).then(res=>{console.log(res.data);})
+                axios.post(`https://fire-up-restaurant-server.vercel.app/logout`,userEmail,{withCredentials:true}).then(res=>{console.log(res.data);})
             }
         })
         return() =>{
