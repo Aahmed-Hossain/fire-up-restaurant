@@ -56,10 +56,11 @@ npm run dev
 <h3>User Login: </h3>
 <img src="https://i.ibb.co/TqWmcZF/fire-Up-Restaurant-login-f.png" width="450px"/>
 
-**Top Foods Zone: **
+<h3>Top Foods Zone:</h3>
 <img src="https://i.ibb.co/r5Kfj96/fire-Up-Restaurant-home-f.png" width="450px"/>
 
-<p> *Ordered Foods:* </p>
+<h3>Ordered Foods:</h3>
 <img src="https://i.ibb.co/6bbN15D/fire-Up-Restaurant-orderlist1.png" width="450px"/>
-<p>Added Foods: </p>
+
+<h3>Added Foods:</h3>
 <img src="https://i.ibb.co/6cMDZKg/fire-Up-Restaurant-added-Foods1.png" width="450px"/>
