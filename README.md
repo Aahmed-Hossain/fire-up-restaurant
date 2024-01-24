@@ -53,7 +53,7 @@ npm run dev
 
 ## Screenshots
 
-<p>User Login: </p>
+<h3>User Login: </h3>
 <img src="https://i.ibb.co/TqWmcZF/fire-Up-Restaurant-login-f.png" width="450px"/>
 
 **Top Foods Zone: **
