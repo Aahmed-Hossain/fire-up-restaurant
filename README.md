@@ -56,7 +56,7 @@ npm run dev
 <p>User Login: </p>
 <img src="https://i.ibb.co/TqWmcZF/fire-Up-Restaurant-login-f.png" width="450px"/>
 
-<p>Top Foods **Zone**: </p>
+**Top Foods Zone: **
 <img src="https://i.ibb.co/r5Kfj96/fire-Up-Restaurant-home-f.png" width="450px"/>
 
 <p> *Ordered Foods:* </p>
