@@ -15,7 +15,7 @@ const Blogs = () => {
   };
 
   return (
-    <div className="mb-8 grid grid-cols- gap-8 mt-8 md:mt-16 md:grid-cols-2 xl:grid-cols-2">
+    <div className="mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mt-2">
       {blogs?.map((blog) => (
         <div key={blog._id}>
           <div className="relative">

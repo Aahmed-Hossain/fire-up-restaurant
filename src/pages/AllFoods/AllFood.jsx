@@ -88,7 +88,7 @@ const AllFood = () => {
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            onKeyPress={handleKeyPress}   // Call handleSearch when Enter key is pressed
+            onKeyPress={handleKeyPress}  
             placeholder="Search Your Foods"
             className="flex-1 px-4 py-2 border-none focus:outline-none"
           />

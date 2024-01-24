@@ -104,7 +104,7 @@ const UpdateAddedFood = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Set Oring</span>
+                <span className="label-text">Set Oringin</span>
               </label>
               <input
                 defaultValue={food_origin}
