@@ -4,10 +4,10 @@ import logo from '../assets/images/logo.png'
 import useAuth from '../hooks/useAuth';
 import NavbarLinks from "./NavbarLinks";
 import {  Link, NavLink, useNavigate } from 'react-router-dom';
-
+import ThemeToggle from './ThemeToggle/ThemeToggle';
 
 const Navbar = () => {
-  const {user,logOut} = useAuth();
+const {user,logOut} = useAuth();
 const navigateToLogin = useNavigate()
   const handleLogout = () =>{
     logOut()
@@ -38,6 +38,7 @@ const navigateToLogin = useNavigate()
   </ul>
 </div>
 <div className="navbar-end">
+  <ThemeToggle></ThemeToggle>
 {
    user?.email ? 
   <div className="dropdown dropdown-end ">

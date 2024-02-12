@@ -55,7 +55,7 @@ const handleUpdateProfile = (name, img) => {
         return() =>{
             unSubscribe();
         }
-    },[])
+    },[user?.email])
     
     const authInfo = {user,loading,createUser,logIn,logOut,googleLogin,githubLogin,handleUpdateProfile }
     return (
