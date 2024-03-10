@@ -147,7 +147,6 @@ const Register = () => {
                 to={"/login"}
                 className="text-[#dc2626] font-bold hover:underline"
               >
-                {" "}
                 Please Login
               </Link>
             </p>

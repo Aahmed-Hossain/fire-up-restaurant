@@ -140,18 +140,28 @@ const Banner = () => {
         <div key={index} className="carousel-item relative rounded-xl w-full">
           <img src={img} className="w-full rounded-xl  h-[26rem]" alt={`Slide ${index + 1}`} />
           <div className="absolute left-0 top-0 flex items-center h-full gap-4 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)] text-white rounded-xl ">
-            <div className='pl-12 w-1/2'>
-              <h1 className='my-6 text-6xl font-bold space-y-16'>Hundreds of flavors under one roof.</h1>
+            <div className='lg:pl-12 p-4 lg:w-1/2 w-full'>
+              <h1 className='my-6 lg:text-6xl md:text-3xl text-xl font-bold space-y-16'>Hundreds of flavors under one roof.</h1>
               <p className='text-sm font-light'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-              <div className='my-6 ml-24'>
-                <Link to={'/allFoods'} className="px-3 py-2 font-bold rounded-md border-2 border-[#FF3811]">View Menu</Link>
-              </div>
+              <button className="px-3 py-2 font-bold rounded-md border-2 border-[#FF3811] hover:bg-[#FF3811] my-8">
+                <Link to={'/allFoods'} >View Menu</Link>
+              </button>
             </div>
           </div>
-          <div className="absolute flex justify-end gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0">
-            <a href={`#slide${index === 0 ? images.length : index}`} className="btn text-white btn-circle bg-red-600">❮</a>
-            <a href={`#slide${index === images.length - 1 ? 1 : index + 2}`} className="btn btn-circle text-white bg-red-600">❯</a>
+          <div className=''>
+          <div className="absolute flex  gap-4 justify-end right-5 bottom-8">
+            <a href={`#slide${index === 0 ? images.length : index}`} className="btn text-white btn-circle bg-red-600 ">❮</a>
+            <a href={`#slide${index === images.length - 1 ? 1 : index + 2}`} className="btn btn-circle text-white bg-red-600 ">❯</a>
           </div>
+          </div>
+
+
+         {/* <div className="absolute flex justify-end gap-4 transform -translate-y-1/2 left-5 right-5 bottom-0 lg:flex md:visible hidden">
+  <a href={`#slide${index === 0 ? images.length : index}`} className="btn text-white btn-circle bg-red-600">❮</a>
+  <a href={`#slide${index === images.length - 1 ? 1 : index + 2}`} className="btn btn-circle text-white bg-red-600">❯</a>
+</div> */}
+
+
         </div>
       ))}
     </Slider>

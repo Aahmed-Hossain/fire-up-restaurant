@@ -29,7 +29,7 @@ const TopFood = () => {
       <p className="text-[#FF3811] mt-2 text-xl font-semibold text-center">
         You will get our the most six ordered food in this zone.
       </p>
-      <p className="text-sm  dark:text-gray-200 text-center my-3">
+      <p className="text-sm dark:text-gray-200 text-center my-3 hidden md:block lg:block">
         Skilled chef crafting exquisite dishes, blending flavors for a
         delightful.Delicious cuisine, prompt service, <br />
         inviting ambiance our commitment to your dining satisfaction.
