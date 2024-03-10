@@ -19,7 +19,6 @@ const AllFood = () => {
       const data = await response.json();
       setSearchResults(data);
       setSearchTerm('')
-      // console.log('serch',searchResults);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -54,7 +53,6 @@ const AllFood = () => {
     queryKey: ["foods", page, price, category],
     queryFn: getFoods,
   });
-  console.log("all foods", foods);
   if (isLoading) {
     return <Loading></Loading>;
   }
@@ -75,14 +73,14 @@ const AllFood = () => {
   return (
     <div className="my-6">
       <PageTitle title={'All Foods'}></PageTitle>
-      <div className="flex items-center justify-between gap-8 bg-opacity-90  py-2 px-2 border-2 border-orange-600 rounded-xl mb-4">
+      <div className="grid lg:grid-cols-4 mg:grid-cols-2 grid-cols-1 gap-6  justify-center items-center bg-opacity-90  py-2 px-2 border-2 border-orange-600 rounded-xl mb-4">
+        {/* text container */}
         <div>
-          <h1 className="text-3xl font-bold text-orange-500">
-            Hundrends of Flavors <br /> Under One Roof
+          <h1 className="lg:text-2xl md:text-2xl text-base font-bold text-orange-500">
+            Hundrends of Flavors Under One Roof
           </h1>
         </div>
         {/* serch option */}
-
         <div className="flex items-center border-2 border-orange-500 rounded-xl p-2">
           <input
             type="text"
@@ -94,7 +92,7 @@ const AllFood = () => {
           />
           <button
           onClick={handleSearch}
-           className="ml-2 p-2 hover:bg-orange-600 bg-orange-500 text-white rounded-full focus:outline-none">
+           className="mr-2 p-2 hover:bg-orange-600 bg-orange-500 text-white rounded-full focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -109,8 +107,6 @@ const AllFood = () => {
             </svg>
           </button>
         </div>
-        {/* sorting div right side */}
-        <div className="flex justify-center gap-2">
           {/*  sorting  by price */}
           <div className="border-2 border-orange-500 rounded-xl p-2">
             <select
@@ -139,7 +135,7 @@ const AllFood = () => {
               ))}
             </select>
           </div>
-        </div>
+ 
       </div>
 
       {/* all foods below */}
