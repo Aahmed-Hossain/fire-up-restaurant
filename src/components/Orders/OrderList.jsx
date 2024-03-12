@@ -8,7 +8,6 @@ const OrderList = ({ order, refetch }) => {
   const {_id, image, quantity ,price ,date, food_name, customerName } = order;
 
   const handleDelete = id => {
-
     swal({
       title: "Are you sure?",
       text: "Once deleted, you will not be able to recover this.!",
@@ -35,24 +34,26 @@ const OrderList = ({ order, refetch }) => {
     });
   }
   return (
-    <div className="w-9/12 mx-auto ">
+    <div className="w-full md:w-11/12 lg:w-9/12 mx-auto ">
       
-      <div className="flex items-center justify-between gap-2  py-2 border border-slate-200 rounded-xl mb-4">
-        {/* left div */}
-        <div className='flex items-center gap-3'>
-        <button onClick={()=>handleDelete(_id)} className=" btn-circle btn-sm opacity-50 ml-2 hover:opacity-70 bg-black text-white">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 items-center justify-between gap-2  border border-slate-200 rounded-xl mb-4">
+        {/* image container*/}
+        <div className='flex items-center justify-center gap-3'>
+        <button onClick={()=>handleDelete(_id)} className=" btn-circle btn-sm opacity-50 ml-2 hover:opacity-70 bg-black text-white hidden md:block lg:block">
           X
         </button>
-          <img className="w-[15rem] rounded-xl flex items-start" src={image} alt="" />
+          <img className="lg:w-[15rem] md:w-full w-full rounded-xl flex items-start" src={image} alt="" />
+          </div>
+             {/* info container*/}
         <div>
           <p className='text-xl font-semibold text-[#FF3811]'>{food_name}</p>
           <p className='text-[#A2A2A2]'>Customer: {customerName}</p>
           <p className='text-[#A2A2A2]'>Price: {price}</p>
           <p className='text-[#A2A2A2]'>Quantity: {quantity}</p>
+       
         </div>
-        </div>
-        {/* right div */}
-        <div className='flex items-center gap-4 pr-2'>
+        {/* date and update container */}
+        <div className='flex items-center justify-end  gap-4'>
         <div>
           <p>Date: {date}</p>
         </div>
