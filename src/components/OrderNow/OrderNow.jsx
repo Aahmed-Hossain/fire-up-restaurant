@@ -6,7 +6,6 @@ import PageTitle from "../PageTitle/PageTitle";
 const OrderNow = () => {
   const food = useLoaderData();
   const navigate = useNavigate();
-  // console.log('single food',food);
   const {
     _id,
     image,
@@ -62,21 +61,22 @@ const OrderNow = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div className=" bg-base-00">
+    <div>
       <PageTitle title={"Order Now"}></PageTitle>
-      <div className="relative h-[18rem]">
-        <img src={image} className="h-[18rem] w-full rounded-xl" />
+      <div className="relative h-[10rem] md:h-[18rem] lg:h-[20rem]">
+        <img src={image} className="h-[10rem] md:h-[18rem] lg:h-[20rem] w-full rounded-xl" />
         <div className="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
       </div>
       <h2 className="text-center mt-3  font-bold text-3xl text-[#FF3811]">
         {food_name}
       </h2>
       <form onSubmit={handleBookService}>
-        <div className="flex gap-4">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-0 md:gap-3 lg:gap-4">
+          <div className="w-full md:w-1/2">
+            {/* name input field */}
             <div className="form-control ">
               <label className="label">
-                <span className="label-text">Name</span>
+                <span className="label-text  font-bold">Name:</span>
               </label>
               <input
                 type="text"
@@ -87,9 +87,10 @@ const OrderNow = () => {
                 required
               />
             </div>
+            {/* email input field */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Email</span>
+                <span className="label-text font-bold">Email:</span>
               </label>
               <input
                 type="email"
@@ -101,11 +102,12 @@ const OrderNow = () => {
                 readOnly
               />
             </div>
+            {/* date input field */}
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2 lg:w-1/2">
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Date</span>
+                <span className="label-text font-bold">Date:</span>
               </label>
               <input
                 name="date"
@@ -114,27 +116,29 @@ const OrderNow = () => {
                 required
               />
             </div>
-            <div className="flex justify-between">
-              <div className="">
+            {/* Price input field */}
+            <div className="flex flex-col md:flex-row lg:flex-row gap-0 md:gap-2 lg:gap-3 ">
+              <div className="w-full md:w-1/2 lg:w-1/2">
                 <label className="label">
-                  <span className="label-text">Price</span>
+                  <span className="label-text font-bold">Price:</span>
                 </label>
                 <input
                   defaultValue={"$" + price.toString().replace(/^\$/, "")}
-                  className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500"
+                  className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500 w-full"
                   name="price"
                   required
                   readOnly
                 />
               </div>
-              <div className="">
+             {/* Quantiy input field */}
+              <div className="w-full md:w-1/2 lg:w-1/2">
                 <label className="label">
-                  <span className="label-text">Set Quantiy</span>
+                  <span className="label-text font-bold">Set Quantiy:</span>
                 </label>
                 <input
                   name="quantity"
                   placeholder={"Available Quantity: " + quantity}
-                  className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500"
+                  className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500 w-full"
                   required
                 />
               </div>
@@ -143,7 +147,7 @@ const OrderNow = () => {
         </div>
         <input
           type="submit"
-          className=" py-2 px-4 w-full rounded text-white font-bold text-lg bg-[#FF3811] my-3"
+          className="cursor-pointer py-2 px-4 w-full rounded text-white font-bold text-lg bg-[#FF3811] my-3"
           value="Place Order"
         />
       </form>

@@ -22,11 +22,7 @@ const  StaffCard = ({staff}) => {
       <FaFacebookF className="text-red-600 hover:text-red-400 cursor-pointer"/>
       <FaYoutube className="text-red-600 hover:text-red-400 cursor-pointer"/>
       <GrInstagram className="text-red-600 hover:text-red-400 cursor-pointer"/>
-      
       </div>
-    {/* <img className='my-2'
-    src="https://i.ibb.co/DptJbCm/logo-Social-removebg-preview.png" alt="" />   */}
-
     </div>
     
     );
