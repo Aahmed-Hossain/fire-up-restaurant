@@ -31,8 +31,8 @@ const Orders = () => {
           <PageTitle title={'Order Lists'}></PageTitle>
           <h1 className=" font-bold text-xl lg:text-4xl md:text-3xl text-center text-orange-500">Your Order List
       </h1>
-  <div className="relative h-[8rem] lg:h-[15rem] md:h-[13rem]">
-  <img src={banner1} className="h-[8rem] lg:h-[15rem] md:h-[13rem]  w-full lg:w-9/12 md:w-10/12 mx-auto rounded-xl" />
+          <div className="relative h-[8rem] md:h-[12rem] lg:h-[15rem]">
+  <img src={banner1} className="h-[8rem] md:h-[12rem] lg:h-[15rem] w-full lg:w-9/12 md:w-11/12 mx-auto rounded-xl" />
 </div>
         {orders?.data?.map((order, index) => (
           <OrderList key={index} order={order} refetch={refetch}></OrderList>
