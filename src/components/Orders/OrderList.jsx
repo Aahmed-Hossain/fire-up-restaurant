@@ -39,10 +39,10 @@ const OrderList = ({ order, refetch }) => {
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 items-center justify-between gap-2  border border-slate-200 rounded-xl mb-4 px-0 md:px-2 lg:px-2 ">
         {/* image container*/}
         <div className='flex items-center justify-center gap-3'>
-        <button onClick={()=>handleDelete(_id)} className=" btn-circle btn-sm opacity-50 hover:opacity-70 bg-black text-white hidden md:block lg:block px-3">
+        <button onClick={()=>handleDelete(_id)} className=" btn-circle btn-sm opacity-50 hover:opacity-70 bg-black text-white hidden md:block lg:block px-3 ml-1">
           X
         </button>
-          <img className="lg:w-[15rem] md:w-full w-full rounded-xl flex items-start" src={image} alt="" />
+          <img className="lg:w-[15rem] md:w-[11rem] w-full rounded-xl flex items-start" src={image} alt="" />
           </div>
              {/* info container*/}
         <div className='px-2'>
@@ -53,14 +53,13 @@ const OrderList = ({ order, refetch }) => {
        
         </div>
         {/* date and update container */}
-        <div className='flex items-center lg:justify-end md:justify-end justify-between gap-4 p-2'>
-        <div>
+        <div className='flex items-center lg:justify-end md:justify-end justify-between gap-4 p-2 md:p-0 lg:p-0 '>
           <p >Date: {date}</p>
-        </div>
+
         <Link to={`/update/${_id}`}><img className='w-[2rem] hover: hover:bg-black hover:opacity-70' src={edit} alt="" />
         </Link >
         {/* button for just mobile responsive */}
-        <button onClick={()=>handleDelete(_id)} className=" btn-circle btn-sm opacity-50 hover:opacity-70 bg-black text-white  visible px-3 lg:block md:block">
+        <button onClick={()=>handleDelete(_id)} className=" btn-circle btn-sm opacity-50 hover:opacity-70 bg-black text-white px-3 visible md:hidden lg:hidden">
           X
         </button>
 
