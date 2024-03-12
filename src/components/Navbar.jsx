@@ -50,6 +50,7 @@ const navigateToLogin = useNavigate()
   </ul>
 </div>
 <div className="navbar-end">
+<h3 className="uppercase mr-4 font-bold hidden md:block lg:block">{user?.displayName}</h3>
   <ThemeToggle></ThemeToggle>
 {
    user?.email ? 
@@ -58,7 +59,6 @@ const navigateToLogin = useNavigate()
         <div className="w-10 rounded-full"><img onClick={handleClose} src={user.photoURL} /></div>
       </label>
     <ul onClick={handleClose}  tabIndex={0} className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-900 text-white rounded-box w-52  ${close ? 'hidden lg:flex' : 'visible lg:hidden'} `}>
-      <li><button  className="btn btn-sm  btn-ghost">{user.displayName}</button></li>
       <li> <button className="btn btn-sm  btn-ghost"><Link to={'/orders'}> My Orders</Link></button></li>
       <li> <button className="btn btn-sm  btn-ghost"><Link to={'/addFoods'}>Add Foods</Link></button></li>
       <li> <button className="btn btn-sm btn-ghost"><Link to={'/MyAddedFoods'}>My Added Foods</Link></button></li>

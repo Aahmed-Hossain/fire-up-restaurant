@@ -34,9 +34,9 @@ const axiosHook = useAxios();
       });
     }
     return (
-        <div className="w-9/12 mx-auto ">
-      <div className="flex items-center justify-between gap-2  py-2 border border-slate-200 rounded-xl mb-4">
-        {/* left div */}
+        <div className="w-full md:w-11/12 lg:w-9/12 mx-auto ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 items-center justify-between gap-2  border border-slate-200 rounded-xl mb-4 px-0 md:px-2 lg:px-2 ">
+        {/* left container */}
         <div className='flex items-center gap-3'>
         <button onClick={()=>handleDelete(_id)} className=" btn-circle btn-sm opacity-50 ml-2 hover:opacity-70 bg-black text-white">
           X

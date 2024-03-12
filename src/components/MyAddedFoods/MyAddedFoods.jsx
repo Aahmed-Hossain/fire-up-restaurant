@@ -29,11 +29,10 @@ const MyAddedFoods = () => {
   }
     return (
         <div className="space-y-3">
-          <h1 className=" font-bold text-4xl text-center mb-2 text-orange-500">Your Added Foods
+          <h1 className=" font-bold text-xl lg:text-4xl md:text-3xl text-center text-orange-500">Your Added Foods
       </h1>
-          <div className="relative h-[15rem]">
-  <img src={banner1} className="h-[15rem] w-9/12 mx-auto rounded-xl" />
-  <div className="absolute inset-0 bg-black opacity-20 rounded-xl w-9/12 mx-auto"></div>
+          <div className="relative h-[8rem] md:h-[12rem] lg:h-[15rem] ">
+  <img src={banner1} className="h-[8rem] md:h-[12rem] lg:h-[15rem] w-full lg:w-9/12 md:w-11/12 mx-auto rounded-xl" />
 </div>
         {addedFoods?.data?.result?.map((addedFood, index) => (
           <AddedFoodList key={index} addedFood={addedFood} refetch={refetch}></AddedFoodList>
