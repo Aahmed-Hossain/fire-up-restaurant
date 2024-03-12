@@ -2,7 +2,10 @@ import chef1 from '../src/assets/images/chef1.jpg'
 import chef2 from '../src/assets/images/chef2.jpeg'
 import chef3 from '../src/assets/images/chef3.jpeg'
 import chef4 from '../src/assets/images/chef4.jpeg'
-import Testimony from './../src/components/Testimony/Testimony';
+import strength1 from '../src/assets/images/strength1.png'
+import strength2 from '../src/assets/images/strength2.png'
+import strength3 from '../src/assets/images/strength3.png'
+import strength4 from '../src/assets/images/strength4.png'
 export const staffs = [
     {
       name: "Jogen Joy",
@@ -64,3 +67,26 @@ export const staffs = [
       image: "https://i.ibb.co/zHdT4v0/staff-2-jpg.webp",
     },
   ];
+
+  export const strengths = [
+    {
+      image: strength1,
+      title: 'Skilled Chef',
+      description: 'Delicious cuisine, prompt service, inviting ambiance our commitment to your dining satisfaction..'
+    },
+    {
+      image: strength2,
+      title: 'Fresh Environment',
+      description: 'Delicious cuisine, prompt service, inviting ambiance our commitment to your dining satisfaction.'
+    },
+    {
+      image: strength3,
+      title: 'Enjoy & Party',
+      description: 'Delicious cuisine, prompt service, inviting ambiance our commitment to your dining satisfaction.'
+    },
+    {
+      image: strength4,
+      title: 'High Quality Food',
+      description: 'Delicious cuisine, prompt service, inviting ambiance our commitment to your dining satisfaction.'
+    },
+  ]
