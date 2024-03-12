@@ -1,37 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import ReviewCard from "./Reviewcard";
-const data = [
-  {
-    name: "John Doe",
-    designation: "Digital Marketing Expert",
-    description:
-      "Deliciously crafted dishes with exquisite flavors! The restaurant's diverse menu caters to every palate. The ambiance enhances the dining experience, making it a perfect culinary retreat.",
-    image: "https://i.ibb.co/v3ZrB7t/staff-4-jpg.webp",
-  },
-  {
-    name: "Jane Smith",
-    designation: "UX Designer",
-    description:
-      "An exceptional gastronomic journey! The culinary creations are a symphony of taste and presentation. The warm and inviting ambiance adds to the pleasure of savoring extraordinary dishes memorable dining experience.",
-    image: "https://i.ibb.co/CBfG8Vs/staff-3-jpg.webp",
-  },
-  {
-    name: "Alex Johnson",
-    designation: "Marketing Manager",
-    description:
-      "A culinary haven! The menu showcases a delightful array of dishes, each a masterpiece. The cozy ambiance with subtle decor creates an intimate and enjoyable setting for a memorable dining experience.",
-    image: "https://i.ibb.co/MBqFSTs/staff-1-jpg.webp",
-  },
-  {
-    name: "Emily Williams",
-    designation: "Product Manager",
-    description:
-      "An epicurean's dream! The restaurant offers a delectable fusion of flavors that tantalize the taste buds. The atmosphere elevates the dining adventure, making it a must-visit",
-    image: "https://i.ibb.co/zHdT4v0/staff-2-jpg.webp",
-  },
-];
+import TestimonyCard from "./TestimonyCard";
+import { testimonies } from "../../../public/info";
 
 const Testimony = () => {
   return (
@@ -68,9 +39,9 @@ const Testimony = () => {
         modules={[Autoplay]}
         className="my-8"
       >
-        {data.map((datum, idx) => (
+        {testimonies.map((testimony, idx) => (
           <SwiperSlide key={idx}>
-            <ReviewCard datum={datum}></ReviewCard>
+            <TestimonyCard testimony={testimony}></TestimonyCard>
           </SwiperSlide>
         ))}
       </Swiper>
