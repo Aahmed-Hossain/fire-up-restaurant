@@ -93,7 +93,6 @@ const Login = () => {
               onClick={() => hadleSocialLogin(googleLogin)}
               className="rounded-full border border-[#dc2626] flex justify-center gap-1 items-center mb-2 w-full p-2"
             >
-              {" "}
               <FcGoogle className="text-lg "/>
 
               <span>Continue with Google</span>
@@ -102,7 +101,6 @@ const Login = () => {
               onClick={() => hadleSocialLogin(githubLogin)}
               className="rounded-full border border-[#dc2626] flex justify-center gap-1 items-center mb-2 w-full p-2"
             >
-              {" "}
               <VscGithub className="text-lg text-blue-400"/>
               <span>Continue with Github</span>
             </button>
