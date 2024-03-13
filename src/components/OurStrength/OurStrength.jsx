@@ -13,7 +13,7 @@ const OurStrength = () => {
         delightful.Delicious cuisine, prompt service, <br />
         inviting ambiance our commitment to your dining satisfaction.
       </p>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 justify-center gap-4">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 justify-center  justify-items-center  gap-8">
         {strengths.map((strength, idx) => (
           <StrengthCard key={idx} strength={strength} />
         ))}
