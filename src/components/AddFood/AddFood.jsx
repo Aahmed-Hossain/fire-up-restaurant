@@ -60,17 +60,17 @@ const AddFood = () => {
     });
   };
   return (
-    <div className=" p-4 bg-base-200">
-      <div className="relative h-[18rem]">
-        <img src={banner1} className="h-[18rem] w-full rounded-xl" />
-        <div className="absolute inset-0 bg-black opacity-20 rounded-xl"></div>
+    <div>
+      <div className="w-full relative h-[8rem] md:h-[12rem] lg:h-[15rem]">
+        <img src={banner1} className="w-full h-[8rem] md:h-[12rem] lg:h-[15rem] mx-auto rounded-xl" />
       </div>
       <form onSubmit={handleAddFood}>
-        <div className="flex gap-4">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-0 md:gap-3 lg:gap-4">
+          <div className="w-full md:w-1/2 lg:w-1/2">
+            {/* food name  */}
             <div className="form-control ">
               <label className="label">
-                <span className="label-text">Set Food Name</span>
+                <span className="label-text font-bold">Set Food Name:</span>
               </label>
               <input
                 type="text"
@@ -80,9 +80,10 @@ const AddFood = () => {
                 required
               />
             </div>
+            {/* origin  */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Set Oringin</span>
+                <span className="label-text font-bold">Set Oringin:</span>
               </label>
               <input
                 type="text"
@@ -92,9 +93,10 @@ const AddFood = () => {
                 required
               />
             </div>
+           {/* chef name */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Set Chef Name</span>
+                <span className="label-text font-bold">Set Chef Name:</span>
               </label>
               <input
                 type="text"
@@ -105,10 +107,11 @@ const AddFood = () => {
               />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2 lg:w-1/2">
+            {/* date */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Set Date</span>
+                <span className="label-text font-bold">Set Date:</span>
               </label>
               <input
                 name="date"
@@ -117,10 +120,11 @@ const AddFood = () => {
                 required
               />
             </div>
-            <div className="flex justify-between ">
-              <div className=" form-control">
+            <div className="flex gap-0 md:gap-2 lg:gap-3 justify-between ">
+              {/* price container */}
+              <div className="w-1/2 form-control">
                 <label className="label">
-                  <span className="label-text">Add Price</span>
+                  <span className="label-text font-bold">Add Price:</span>
                 </label>
                 <input
                   className="input border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500 "
@@ -131,9 +135,10 @@ const AddFood = () => {
                   min="1"
                 />
               </div>
-              <div className="form-control">
+              {/* quatity input field */}
+              <div className="w-1/2 form-control">
                 <label className="label">
-                  <span className="label-text">Set Quantiy</span>
+                  <span className="label-text font-bold">Set Quantiy:</span>
                 </label>
                 <input
                   name="quantity"
@@ -149,7 +154,7 @@ const AddFood = () => {
             {/* select category */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Select Category</span>
+                <span className="label-text font-bold">Select Category:</span>
               </label>
               <select
                 id="foodCategory"
@@ -173,7 +178,7 @@ const AddFood = () => {
         {/* image link */}
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Set Image Link</span>
+            <span className="label-text font-bold">Set Image Link:</span>
           </label>
           <input
             type="text"
@@ -186,13 +191,13 @@ const AddFood = () => {
         {/* text area (description) */}
         <div>
           <label className="label">
-            <span className="label-text">Describe About Your Food</span>
+            <span className="label-text font-bold">Describe About Your Food:</span>
           </label>
           <textarea
             className="w-full rounded-xl    border border-orange-500 focus:outline-none focus:border-2 focus:border-orange-500"
             name="description"
             id=""
-            rows="6"
+            rows="4"
             required
           ></textarea>
         </div>

@@ -1,13 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import githubImg from "../../assets/images/github.png";
-import googleImg from "../../assets/images/google.png";
+
 import img from "../../assets/lottie/singing-contract.json";
 import swal from "sweetalert";
 import Lottie from "lottie-react";
 import useAuth from "../../hooks/useAuth";
 import PageTitle from "../../components/PageTitle/PageTitle";
+import { FcGoogle } from "react-icons/fc";
+import { VscGithub } from "react-icons/vsc";
 
 const Login = () => {
   const { googleLogin, githubLogin, logIn } = useAuth();
@@ -43,7 +44,7 @@ const Login = () => {
     <div className="hero min-h-screen">
       <PageTitle title={'Login Page'}></PageTitle>
       <div className="hero-content flex-col lg:flex-row">
-        <div className="w-1/2 mr-12 ">
+        <div className=" w-11/12 md:w-1/2 lg:w-1/2 mr-12 ">
           <Lottie animationData={img}></Lottie>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm border border-[#dc2626] rounded-none">
@@ -90,18 +91,19 @@ const Login = () => {
             <p className="divider">OR</p>
             <button
               onClick={() => hadleSocialLogin(googleLogin)}
-              className="rounded-full px-3 py-2 border border-[#dc2626] flex justify-around items-center mb-2 w-full"
+              className="rounded-full border border-[#dc2626] flex justify-center gap-1 items-center mb-2 w-full p-2"
             >
               {" "}
-              <img className="h-[1rem] w-[1rem]" src={googleImg} alt="" />
+              <FcGoogle className="text-lg "/>
+
               <span>Continue with Google</span>
             </button>
             <button
               onClick={() => hadleSocialLogin(githubLogin)}
-              className="rounded-full px-3 py-2 border border-[#dc2626] flex justify-around items-center mb-2 w-full"
+              className="rounded-full border border-[#dc2626] flex justify-center gap-1 items-center mb-2 w-full p-2"
             >
               {" "}
-              <img className="h-[1.5rem] w-[1.5rem]" src={githubImg} alt="" />
+              <VscGithub className="text-lg text-blue-400"/>
               <span>Continue with Github</span>
             </button>
             <p className="my-4 text-center">

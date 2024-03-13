@@ -77,21 +77,20 @@ const UpdateAddedFood = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div className=" bg-base-200">
-      <h1 className=" font-bold text-4xl text-center mb-2">
+    <div>
+      <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl text-center mb-2">
         Update Your Added Food:{" "}
         <span className="text-[#FF3811]">{food_name}</span>
       </h1>
-      <div className="relative h-[18rem]">
-        <img src={image} className="h-[18rem] w-full rounded-xl" />
-        <div className="absolute inset-0 bg-black opacity-20 rounded-xl"></div>
+      <div className="relative h-[22rem]">
+        <img src={image} className="h-[22rem] w-full rounded-xl border p-1" />
       </div>
       <form onSubmit={handleUpdateAddedFood}>
-        <div className="flex gap-4">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-row lg:flex-row  gap-4">
+          <div className="w-full md:w-1/2 lg:w-1/2">
             <div className="form-control ">
               <label className="label">
-                <span className="label-text">Set Food Name</span>
+                <span className="label-text font-bold">Set Food Name:</span>
               </label>
               <input
                 defaultValue={food_name}
@@ -104,7 +103,7 @@ const UpdateAddedFood = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Set Oringin</span>
+                <span className="label-text font-bold">Set Oringin:</span>
               </label>
               <input
                 defaultValue={food_origin}
@@ -117,7 +116,7 @@ const UpdateAddedFood = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Set Chef Name</span>
+                <span className="label-text font-bold">Set Chef Name:</span>
               </label>
               <input
                 defaultValue={made_by}
@@ -129,10 +128,10 @@ const UpdateAddedFood = () => {
               />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2 lg:w-1/2">
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Set Date</span>
+                <span className="label-text font-bold">Set Date:</span>
               </label>
               <input
                 defaultValue={date}
@@ -142,10 +141,10 @@ const UpdateAddedFood = () => {
                 required
               />
             </div>
-            <div className="flex justify-between ">
-              <div className=" form-control">
+            <div className="flex gap-2 justify-between ">
+              <div className="w-1/2 form-control">
                 <label className="label">
-                  <span className="label-text">Add Price</span>
+                  <span className="label-text font-bold">Add Price:</span>
                 </label>
                 <input
                   defaultValue={price}
@@ -157,9 +156,9 @@ const UpdateAddedFood = () => {
                   min="1"
                 />
               </div>
-              <div className="form-control">
+              <div className="w-1/2 form-control">
                 <label className="label">
-                  <span className="label-text">Set Quantiy</span>
+                  <span className="label-text font-bold">Set Quantiy:</span>
                 </label>
                 <input
                   defaultValue={quantity}
@@ -176,7 +175,7 @@ const UpdateAddedFood = () => {
             {/* select category */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text">Select Category</span>
+                <span className="label-text font-bold">Select Category:</span>
               </label>
               <select
                 id="foodCategory"
@@ -187,7 +186,7 @@ const UpdateAddedFood = () => {
                 value={selectedCategory}
                 onChange={handleCategoryChange}
               >
-                <option value="">Select Food Category</option>
+                <option value="">Select Food Category:</option>
                 {categories.map((category, index) => (
                   <option key={index} value={category}>
                     {category}
@@ -201,7 +200,7 @@ const UpdateAddedFood = () => {
         {/* image link */}
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Set Image Link</span>
+            <span className="label-text font-bold">Set Image Link:</span>
           </label>
           <input
             defaultValue={image}
@@ -215,7 +214,7 @@ const UpdateAddedFood = () => {
         {/* text area (description) */}
         <div>
           <label className="label">
-            <span className="label-text">Describe About Your Food</span>
+            <span className="label-text font-bold">Describe About Your Food:</span>
           </label>
           <textarea
             defaultValue={description}
